@@ -45,6 +45,7 @@ class ActivityimgModel extends BaseModel
                 }
             }
         }
-        return true;
+        $result = str_replace("/Template/Public/lib/kindeditor/attached/image/","/Uploads/activity_pic/",$content);
+        return $result;
     }
 }

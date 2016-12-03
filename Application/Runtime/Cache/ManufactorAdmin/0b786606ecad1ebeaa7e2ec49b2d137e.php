@@ -402,7 +402,7 @@
     </a>
     <ul class="treeview-menu">
         <li class="active"><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-        <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+        <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
         <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
     </ul>
 </li>
@@ -463,7 +463,7 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-md-offset-3 col-md-6">
-                                    <form role="form" id="regist-form" action="<?php echo U('API/ShopActivityAPI/add_activity');?>" method="post" enctype="multipart/form-data">
+                                    <form role="form" id="regist-form" action="<?php echo U('ManufactorAdmin/Activity/Add_feedback');?>" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="title">活动标题 <span class="text-red">*</span></label>
                                             <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"   />
@@ -476,7 +476,7 @@
                                         </div>
                                         <div class="form-group" >
                                             <label >活动图片<span class="text-red">*</span></label>
-                                            <input type="file" name="img[]" multiple="multiple" >
+                                            <input type="file" name="img[]">
                                         </div>
                                         <div class="form-group" >
                                             <label for="content">活动内容 <span class="text-red">*</span></label>
@@ -785,8 +785,8 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/dist/js/demo.js"></script>
 <!--BootStrap Notify-->
-<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.js"></script>
-<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.min.js"></script>
+<!--<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.js"></script>
+<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.min.js"></script>-->
 <!--<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/Gruntfile.js"></script>
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/package.js"></script>
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/test_meteor.js"></script>-->

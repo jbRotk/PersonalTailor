@@ -1,34 +1,31 @@
 <extend name="Public/tpl/base_admin_page" />
 
-<block name="slidebar-product">
-    <li class="active treeview">
-        <a href="#">
-            <i class="fa fa-shopping-cart"></i>
-            <span>商品管理</span>
-            <span class="pull-right-container">
+<block name="slidebar-shopactivity"><li class="active treeview">
+    <a href="#">
+        <i class="fa fa-hand-peace-o"></i>
+        <span>店铺活动</span>
+        <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href="{:U('ManufactorAdmin/Product/regist_product')}"><i class="fa fa-circle-o"></i>添加商品</a></li>
-            <li class="active"><a href="{:U('ManufactorAdmin/Product/list_product')}"><i class="fa fa-circle-o"></i>商品列表</a></li>
-            <li><a href="{:U('ManufactorAdmin/Product/list_down_products')}"><i class="fa fa-circle-o"></i>下架商品列表</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
-        </ul>
-    </li>
-</block>
+    </a>
+    <ul class="treeview-menu">
+        <li><a href="{:U('ManufactorAdmin/Activity/add_activity')}"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+        <li class="active"><a href="{:U('ManufactorAdmin/Activity/list_activities')}"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+    </ul>
+</li></block>
 
 <block name="content-wrapper">
     <div class="content-wrapper" id="contentWrapper">
         <div class="content-header">
             <h1>
-                商品管理
-                <small>商品列表</small>
+                店铺活动
+                <small>活动列表</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="/backend/page/index"><i class="fa fa-dashboard"></i>主页</a></li>
-                <li><a href="javascript:;"><i class="fa fa-user"></i>商品管理</a></li>
-                <li><a class="active">商品列表</a></li>
+                <li><a href="javascript:;"><i class="fa fa-user"></i>店铺活动</a></li>
+                <li><a class="active">活动列表</a></li>
             </ol>
         </div>
         <div class="content">
@@ -38,7 +35,7 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h4>商品列表</h4>
+                                    <h4>活动列表</h4>
                                 </div>
                             </div>
                             <div class="row">
@@ -49,7 +46,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group pull-right">
-                                        <input type="text" class="form-control" id="search" placeholder="请输入店铺名称" data-bind="value: searchString" />
+                                        <input type="text" class="form-control" id="search" placeholder="请输入活动标题" data-bind="value: searchString" />
                                         <div class="input-group-btn">
                                             <button class="btn btn-default" data-bind="click: searchClick">搜索</button>
                                         </div>
@@ -60,43 +57,44 @@
                                 <thead>
                                 <tr style="background-color: #f9f9f9;">
                                     <th class="col-md-3 text-center">商品图片</th>
-                                    <th class="col-md-2 text-center" name="name" data-bind="click: orderClick"><span>名称&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
-                                    <th class="col-md-2 text-center">简介</th>
-                                    <th class="col-md-1 text-center">商品价格</th>
-                                    <th class="col-md-2 text-center" name="financeid" data-bind="click: orderClick"><span>创建时间&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
+                                    <th class="col-md-2 text-center" name="name" data-bind="click: orderClick"><span>活动标题&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
+                                    <th class="col-md-2 text-center">活动简介</th>
+                                    <th class="col-md-1 text-center">活动详情</th>
+                                    <th class="col-md-2 text-center" name="financeid" data-bind="click: orderClick"><span>起止时间&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
                                     <th class="col-md-2 text-center">操作</th>
                                 </tr>
                                 </thead>
                                 <tbody >
-                                <volist name="products" id="arr">
+                                <volist name="activities" id="arr">
                                     <tr>
                                         <td class="col-md-3">
                                             <div class="col-md-2 choose">
-                                                <input type="checkbox" name="checkbox" class="product-checkbox" value="{$arr.id}" checked="false"/>
+                                                <input type="checkbox" name="checkbox" class="product-checkbox" id="object-id" value="{$arr.id}" checked="false"/>
                                             </div>
                                             <div class="col-md-10">
-                                                <volist name="arr.Productimg" id="item">
+                                                <volist name="arr.Activitytitleimg" id="item">
                                                     <img class="img-rounded" src="{:C('ROOT_PATH')}{$item.img_path}" style="width: 100%" />
                                                 </volist>
                                             </div>
                                         </td>
-                                        <td class="col-md-2 text-center" data-bind="text: name">{$arr.name}</td>
+                                        <!--活动标题-->
+                                        <td class="col-md-2 text-center" >
+                                            {$arr.title}
+                                        </td>
+                                        <!--活动简介-->
                                         <td class="col-md-2 text-center">
-                                            <a  href="javascript:;" data-toggle="modal" data-target="#view" ><span class="introduce-action" data-introduce="{$arr.introduce}">查看说明</span></a>
+                                            <a  href="javascript:;" data-toggle="modal" data-target="#introduce" ><span class="introduce-action" data-introduce="{$arr.introduce}">查看简介</span></a>
                                         </td>
+                                        <!--活动详情-->
                                         <td class="col-md-1 text-center">
-                                            {$arr.price}
-
-                                            <!--<div>
-                                                <input type="text" class="form-control text-center" data-bind="value: sort">
-                                            </div>
-                                            <div style="padding-top: 5px;">
-                                                <a href="javascript:;" data-bind="click: $root.setSort">保存</a>
-                                            </div>-->
+                                            <a  href="javascript:;" data-toggle="modal" data-target="#activity-content" ><span class="content-action" >查看详情</span></a>
                                         </td>
+                                        <!--起止时间-->
                                         <td class="col-md-2 text-center">
                                             <div>
-                                                <span data-bind="text: $root.showTime(createtime)">{$arr.createtime}</span>
+                                                <span>{$arr.start_time}</span><br>
+                                                <span>至</span><br>
+                                                <span>{$arr.end_time}</span>
                                             </div>
 
                                             <span data-bind="text: $root.showStatus(status())"></span>
@@ -233,7 +231,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="view" role="modal" aria-hidden="true">
+                        <!--简介-->
+                        <div class="modal fade" id="introduce" role="modal" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -243,7 +242,29 @@
                                     <div class="modal-body" style="height: 400px; overflow-y: scroll">
                                         <div class="row">
                                             <div class="col-md-offset-1 col-md-10">
-                                                <div id="data-introduce">
+                                                <div id="data-content-activity">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--详情-->
+                        <div class="modal fade" id="activity-content" role="modal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">活动详情</h4>
+                                    </div>
+                                    <div class="modal-body" style="height: auto; overflow-y: scroll">
+                                        <div class="row">
+                                            <div class="col-md-offset-1 col-md-10">
+                                                <div id="data-activity-content">
 
                                                 </div>
                                             </div>
@@ -291,6 +312,18 @@
                 $("#data-introduce").text(introduce_data);
             });
 
+            $(".content-action").on('click',function () {
+                var id =  $(this).parent().parent().parent().find('#object-id').val();
+                //alert(id);
+                $.post("{:U('API/ShopActivityAPI/search_activity_msg')}",
+                        {
+                            'activity_id':id,
+                        },
+                        function (data,status) {
+                            $("#data-activity-content").html(data.content);
+                        }
+                );
+            });
             //批量删除
             $("#del-products").on('click',function () {
                 var check_values = Array();
@@ -325,10 +358,10 @@
                     $('#select-all').text('全选');
                 }
                 /*else
-                {
-                    $('#select-all').val(1);
-                    $('#select-all').text('取消全选');
-                }*/
+                 {
+                 $('#select-all').val(1);
+                 $('#select-all').text('取消全选');
+                 }*/
             });
             //全选
             $("#select-all").on('click',function () {
@@ -432,4 +465,3 @@
         });
     </script>
 </block>
-

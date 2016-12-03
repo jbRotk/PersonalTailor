@@ -22,39 +22,16 @@ class ProductimgModel extends BaseModel
 
     public function upload($product_id)
     {
-/*        $config = array(
-            'maxSize'    =>    3145728,
-            'rootPath'   =>    './Uploads/',
-            'savePath'   =>    '',
-            'exts'       =>    array('jpg','png', 'jpeg'),
-
-        );*/
-        $rules = C('UPLOAD_RULES');
-        $upload = new Upload($rules);
-
-        $info = $upload->upload();
-        if(!$info)
+        $config = array(
+            'maxSize'=> 3145728,
+            'rootPath'   =>   './Uploads/product_pic/',
+            'exts' =>array('png','jpg','jpeg'),
+        );
+        if(Upload($config,'product_id',$product_id,$this))
         {
-            return false;
+            return true;
         }
-        else
-        {
-            foreach ($info as $file)
-            {
-
-                $img_msg['img_path'] = './Uploads/'.$file['savepath'].$file['savename'];
-                if(cropImage($img_msg['img_path']))
-                {
-                    $img_msg['product_id'] = $product_id;
-                    $this->add($img_msg);
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
-        return true;
+        return false;
     }
 
     public function del_img($product_id)

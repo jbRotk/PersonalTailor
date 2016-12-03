@@ -397,7 +397,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-                            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
                             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
                         </ul>
                     </li>

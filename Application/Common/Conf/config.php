@@ -21,10 +21,4 @@ return array(
     'ROOT_ABS_PATH'=>'./Uploads/activity_pic',
     'KINDEDITOR_ABS_CASH_PATH'=>'./Template/Public/lib/kindeditor/attached/image',
 
-    /*文件上传*/
-    'UPLOAD_RULES'=>array(
-        'maxSize'=> 3145728,
-        'rootPath'   =>   './Uploads/',
-        'exts' =>array('png','jpg','jpeg'),
-    ),
 );

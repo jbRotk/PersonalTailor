@@ -399,7 +399,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-                            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
                             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
                         </ul>
                     </li>
@@ -468,7 +468,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group pull-right">
-                                        <input type="text" class="form-control" id="search" placeholder="请输入热门名称" data-bind="value: searchString" />
+                                        <input type="text" class="form-control" id="search" placeholder="请输入店铺名称" data-bind="value: searchString" />
                                         <div class="input-group-btn">
                                             <button class="btn btn-default" data-bind="click: searchClick">搜索</button>
                                         </div>
@@ -1087,8 +1087,8 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/dist/js/demo.js"></script>
 <!--BootStrap Notify-->
-<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.js"></script>
-<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.min.js"></script>
+<!--<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.js"></script>
+<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.min.js"></script>-->
 <!--<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/Gruntfile.js"></script>
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/package.js"></script>
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/test_meteor.js"></script>-->

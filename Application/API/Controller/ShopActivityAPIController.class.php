@@ -44,4 +44,16 @@ class ShopActivityAPIController extends RestController
                 break;
         }
     }
+    public function search_activity_msg()
+    {
+        switch ($this->_method)
+        {
+            case 'post':
+                $activity_id = $_POST['activity_id'];
+                $activity = new ShopactivityModel();
+                $result = $activity->where('id='.$activity_id)->select();
+                $this->response($result[0],'json');
+                break;
+        }
+    }
 }

@@ -26,8 +26,8 @@ class ProductController extends AuthController
             {
                 $upload = new ProductimgModel();
                 $upload->upload($product_id);
-                $this->redirect('ManufactorAdmin/Index/index');
             }
+            $this->redirect('ManufactorAdmin/Product/list_product');
         }
     }
     public function list_product()

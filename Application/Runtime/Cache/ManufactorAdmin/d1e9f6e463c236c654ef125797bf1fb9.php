@@ -360,18 +360,18 @@
                             <li><a href="<?php echo U('ManufactorAdmin/AccountManager/reset_passwd');?>"><i class="fa fa-circle-o"></i> 修改密码</a></li>
                         </ul>
                     </li>
-                    <li class="active treeview">
-    <a href="<?php echo U('ManufactorAdmin/Store/storesetting');?>">
-        <i class="fa fa-university"></i> <span>店铺管理</span>
-        <span class="pull-right-container">
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-university"></i> <span>店铺管理</span>
+                            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-    </a>
-    <ul class="treeview-menu">
-        <li class="active"><a href="<?php echo U('ManufactorAdmin/Shop/shopsetting');?>"><i class="fa fa-circle-o"></i> 店铺信息管理</a></li>
-        <li><a href="index2.html"><i class="fa fa-circle-o"></i> 宣传图管理</a></li>
-    </ul>
-</li>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo U('ManufactorAdmin/Shop/shopsetting');?>"><i class="fa fa-circle-o"></i> 店铺信息管理</a></li>
+                            <li><a href="index2.html"><i class="fa fa-circle-o"></i> 宣传图管理</a></li>
+                        </ul>
+                    </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-shopping-cart"></i>
@@ -387,20 +387,20 @@
                             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
                         </ul>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-hand-peace-o"></i>
-                            <span>店铺活动</span>
-                            <span class="pull-right-container">
+                    <li class="active treeview">
+    <a href="#">
+        <i class="fa fa-hand-peace-o"></i>
+        <span>店铺活动</span>
+        <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
-                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
-                        </ul>
-                    </li>
+    </a>
+    <ul class="treeview-menu">
+        <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+        <li class="active"><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+    </ul>
+</li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-list-alt"></i>
@@ -436,64 +436,286 @@
 
     <!-- Content Wrapper. Contains page content -->
     
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
+    <div class="content-wrapper" id="contentWrapper">
+        <div class="content-header">
             <h1>
-                店铺管理
-                <small>设置店铺信息</small>
+                店铺活动
+                <small>活动列表</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Forms</a></li>
-                <li class="active">General Elements</li>
+                <li><a href="/backend/page/index"><i class="fa fa-dashboard"></i>主页</a></li>
+                <li><a href="javascript:;"><i class="fa fa-user"></i>店铺活动</a></li>
+                <li><a class="active">活动列表</a></li>
             </ol>
-        </section>
-
-        <!-- Main content -->
-        <section class="content">
+        </div>
+        <div class="content">
             <div class="row">
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-offset-3 col-md-6">
-                                    <form role="form" action="#" >
-                                        <div class="form-group" data-bind="validationElement: name">
-                                            <label for="name">名称 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="请输入店铺名称"  value="<?php echo ($shop_msg[0][name]); ?>" />
+                                <div class="col-md-12">
+                                    <h4>活动列表</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                </div>
+                                <div class="col-md-2">
+                                    &nbsp;
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="input-group pull-right">
+                                        <input type="text" class="form-control" id="search" placeholder="请输入活动标题" data-bind="value: searchString" />
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" data-bind="click: searchClick">搜索</button>
                                         </div>
-                                        <div class="form-group" >
-                                            <label for="introduce">简介信息 <span class="text-red">*</span></label>
-                                            <textarea rows="2" class="form-control" name="introduce" id="introduce" placeholder="请输入简介信息" ><?php echo ($shop_msg[0][introduce]); ?></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table no-margin">
+                                <thead>
+                                <tr style="background-color: #f9f9f9;">
+                                    <th class="col-md-3 text-center">商品图片</th>
+                                    <th class="col-md-2 text-center" name="name" data-bind="click: orderClick"><span>活动标题&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
+                                    <th class="col-md-2 text-center">活动简介</th>
+                                    <th class="col-md-1 text-center">活动详情</th>
+                                    <th class="col-md-2 text-center" name="financeid" data-bind="click: orderClick"><span>起止时间&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
+                                    <th class="col-md-2 text-center">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody >
+                                <?php if(is_array($activities)): $i = 0; $__LIST__ = $activities;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
+                                        <td class="col-md-3">
+                                            <div class="col-md-2 choose">
+                                                <input type="checkbox" name="checkbox" class="product-checkbox" id="object-id" value="<?php echo ($arr["id"]); ?>" checked="false"/>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <?php if(is_array($arr["Activitytitleimg"])): $i = 0; $__LIST__ = $arr["Activitytitleimg"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><img class="img-rounded" src="<?php echo C('ROOT_PATH'); echo ($item["img_path"]); ?>" style="width: 100%" /><?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </div>
+                                        </td>
+                                        <!--活动标题-->
+                                        <td class="col-md-2 text-center" >
+                                            <?php echo ($arr["title"]); ?>
+                                        </td>
+                                        <!--活动简介-->
+                                        <td class="col-md-2 text-center">
+                                            <a  href="javascript:;" data-toggle="modal" data-target="#introduce" ><span class="introduce-action" data-introduce="<?php echo ($arr["introduce"]); ?>">查看简介</span></a>
+                                        </td>
+                                        <!--活动详情-->
+                                        <td class="col-md-1 text-center">
+                                            <a  href="javascript:;" data-toggle="modal" data-target="#activity-content" ><span class="content-action" >查看详情</span></a>
+                                        </td>
+                                        <!--起止时间-->
+                                        <td class="col-md-2 text-center">
+                                            <div>
+                                                <span><?php echo ($arr["start_time"]); ?></span><br>
+                                                <span>至</span><br>
+                                                <span><?php echo ($arr["end_time"]); ?></span>
+                                            </div>
+
+                                            <span data-bind="text: $root.showStatus(status())"></span>
+                                            </span>
+                                        </td>
+                                        <td class="col-md-2 text-center">
+                                            <div>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#down-product" data-id="<?php echo ($arr["id"]); ?>" class="down-product"><i class="ion-minus-circled"></i>&nbsp;下架产品</a>
+                                                <!--<a href="javascript:;" data-bind="visible: status() == 2, click: $root.up"><i class="ion-minus-circled"></i>&nbsp;上架热门</a>-->
+
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#product-editor" data-id="<?php echo ($arr["id"]); ?>" class="edit-product"><i class="ion-checkmark-circled"></i>&nbsp;编辑产品</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#del" data-id="<?php echo ($arr["id"]); ?>" class="del-product"><i class="ion-close-circled"></i>&nbsp;删除产品</a>
+                                            </div>
+                                        </td>
+                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </tbody>
+                                <tbody style="display: none;" data-bind="visible: total() == 0">
+                                <tr>
+                                    <td colspan="6" class="text-center nofind">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--删除产品-->
+                        <div class="modal fade" id="del"  role="modal" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">删除</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        确认删除这个产品 <span></span>?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button  type="button" class="btn" data-dismiss="modal">取消</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="confirm" value="">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--删除所有-->
+                        <div class="modal fade" id="del-all"  role="modal" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">删除</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        确认删除吗 <span data-bind="text: opItem().name"></span>?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button  type="button" class="btn" data-dismiss="modal">取消</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="del-all-confirm" value="">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--编辑商品-->
+                        <div class="modal fade" id="product-editor" role="modal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">编辑物品</h4>
+                                    </div>
+                                    <div class="modal-body" style="height: auto; overflow-y: scroll">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-md-6">
+                                                <form role="form" id="regist-form"   enctype="multipart/form-data">
+                                                    <div class="form-group" data-bind="validationElement: name">
+                                                        <label for="product-name">名称 <span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" name="name" id="product-name" placeholder="请输入产品名称"   />
+                                                    </div>
+                                                    <div class="form-group" >
+                                                        <label for="product-introduce">简介信息 <span class="text-red">*</span></label>
+                                                        <textarea rows="2" class="form-control" name="introduce" id="product-introduce" placeholder="请输入简介信息" ></textarea>
+                                                    </div>
+                                                    <div class="form-group" >
+                                                        <label for="product-price">价格 <span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" name="price" id="product-price" placeholder="请输入产品价格"  />
+                                                    </div>
+                                                    <div class="form-group" >
+                                                        <label for="product-type">类型 <span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" name="type" id="product-type" placeholder="请输入产品类型"  />
+                                                    </div>
+                                                    <input id="update-id" value="" hidden>
+                                                    <div class="form-group" >
+                                                        <label >产品图片<span class="text-red">*</span></label>
+
+                                                        <input type="file" name="file[]" multiple="multiple" id="img1" >
+                                                        <input type="file" name="file[]" multiple="multiple" id="img2">
+                                                        <input type="file" name="file[]" multiple="multiple" id="img3">
+                                                    </div>
+                                                    <div class="box-footer">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-3 col-md-6 text-right">
+                                                                <button type="submit" class="btn btn-primary" id="product-update">更新</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
-                                        <div class="form-group" >
-                                            <label for="address">地址信息 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="address" id="address" placeholder="请输入店铺地址" value="<?php echo ($shop_msg[0][address]); ?>" />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="type">类型 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="type" id="type" placeholder="请输入店铺类型" value="<?php echo ($shop_msg[0][type]); ?>" />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="img">首页图片<span class="text-red">*</span></label>
-                                            <input type="file" id="img">
-                                        </div>
-                                        <div class="box-footer">
-                                            <div class="row">
-                                                <div class="col-md-offset-3 col-md-6 text-right">
-                                                    <button type="submit" class="btn btn-primary" id="setting">设置</button>
+                                    </div>
+                                    <!--<div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--下架物品-->
+                        <div class="modal fade" id="down-product"  role="modal" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">下架商品</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        确认下架吗 <span data-bind="text: opItem().name"></span>?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button  type="button" class="btn" data-dismiss="modal">取消</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="down-confirm" value="">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--简介-->
+                        <div class="modal fade" id="introduce" role="modal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">简介</h4>
+                                    </div>
+                                    <div class="modal-body" style="height: 400px; overflow-y: scroll">
+                                        <div class="row">
+                                            <div class="col-md-offset-1 col-md-10">
+                                                <div id="data-content-activity">
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--详情-->
+                        <div class="modal fade" id="activity-content" role="modal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">活动详情</h4>
+                                    </div>
+                                    <div class="modal-body" style="height: auto; overflow-y: scroll">
+                                        <div class="row">
+                                            <div class="col-md-offset-1 col-md-10">
+                                                <div id="data-activity-content">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!--<a href="javascript:;" class="btn btn-default" id="select-all" >
+                                        <i class="fa fa-check-square" ></i><i class="fa fa-square-o" data-bind="visible: opAll() == 0"></i>
+                                        &nbsp;全选
+                                    </a>-->
+                                    <label>
+                                        <button  class="btn btn-default" id="select-all" value="1">取消全选</button>
+                                    </label>
+                                    <label>
+                                        <button data-toggle="modal" data-target="#del-all" class="btn btn-default" id="del-products">批量删除</button>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <ul class="pagination no-margin">
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <!-- /.content-wrapper -->
@@ -713,33 +935,161 @@
 
     <script>
         $(document).ready(function () {
-            $("#setting").on('click',function () {
-                var name = $('#name').val();
-                var introduce = $('#introduce').val();
-                var address = $('#address').val();
-                var type = $('#type').val();
-                $.post("<?php echo U('API/ShopAPI/regist_shop');?>",
+            //获取简介内容
+            $(".introduce-action").on('click',function () {
+                var introduce_data = $(this).data('introduce');
+                $("#data-introduce").text(introduce_data);
+            });
+
+            $(".content-action").on('click',function () {
+                var id =  $(this).parent().parent().parent().find('#object-id').val();
+                //alert(id);
+                $.post("<?php echo U('API/ShopActivityAPI/search_activity_msg');?>",
                         {
-                            'manufactor_id':"<?php echo (getFactorID($manufactor_id)); ?>",
-                            'name': name,
-                            'introduce':introduce,
-                            'address':address,
-                            'type':type,
+                            'activity_id':id,
                         },
                         function (data,status) {
-                            alert(data.data);
+                            $("#data-activity-content").html(data.content);
                         }
                 );
             });
-            $.post("<?php echo U('API/ShopAPI/get_msg');?>",
-                    {
-                        'manufactor_id':"<?php echo (getFactorID($manufactor_id)); ?>",
-                    },
-                    function (data,status) {
-                        $('#name').val(data[0].name);
-                        $('#introduce').val(data[0].introduce);
-                        $('#address').val(data[0].address);
-                        $('#type').val(data[0].type);
+            //批量删除
+            $("#del-products").on('click',function () {
+                var check_values = Array();
+                var check_boxs = $("input[name='checkbox']:checked");
+                if(check_boxs.length<=0)
+                {
+                    alert('请选择至少一个商品！');
+                    return;
+                }
+                else
+                {
+                    $('#del-all-confirm').on('click',function () {
+                        check_boxs.each(function () {
+                            check_values.push($(this).val());
+                        });
+                        $.post("<?php echo U('API/ProductAPI/del_products');?>",
+                                {
+                                    'products_id':check_values,
+                                },
+                                function (data,status) {
+                                }
+                        );
+                        window.location.reload();
+                    });
+                }
+            });
+
+            $(".product-checkbox").on('click',function () {
+                if($('#select-all').val() == 1 )
+                {
+                    $('#select-all').val(0);
+                    $('#select-all').text('全选');
+                }
+                /*else
+                 {
+                 $('#select-all').val(1);
+                 $('#select-all').text('取消全选');
+                 }*/
+            });
+            //全选
+            $("#select-all").on('click',function () {
+
+                //没有全选的话
+                if($(this).val() == 0)
+                {
+                    $(this).val(1);
+                    $(this).text("取消全选");
+                    //$(":checkbox").attr("checked", "checked");
+                    $("input[type='checkbox']").each(function() {
+                        this.checked = true;
+                    });
+                }
+                //全选的话
+                else
+                {
+                    $(this).val(0);
+                    $(this).text("全选");
+                    $("input[type='checkbox']").each(function() {
+                        this.checked = false;
+                    });
+                    /*$(":checkbox").attr("checked", "false");*/
+                }
+            });
+            //删除单个产品
+            $(".del-product").on('click',function () {
+                var value = Array();
+                value.push($(this).data('id'));
+                $("#confirm").on('click',function () {
+                    $.post("<?php echo U('API/ProductAPI/del_products');?>",
+                            {
+                                'products_id':value,
+                            },
+                            function (data,status) {
+                            }
+                    );
+                    window.location.reload();
+                });
+            });
+
+            //编辑产品
+            $(".edit-product").on('click',function () {
+                var product_id = $(this).parent().parent().find(".down-product").data('id');
+                $('#update-id').val(product_id);
+                $.post("<?php echo U('API/ProductAPI/product_msg');?>",
+                        {
+                            'product_id':product_id,
+                        },
+                        function (data,status) {
+                            $('#product-name').val(data.name);
+                            $('#product-introduce').text(data.introduce);
+                            $('#product-price').val(data.price);
+                            $('#product-type').val(data.type);
+                        }
+                );
+            });
+
+            //更新产品
+            $("#product-update").on('click',function () {
+                var id = $('#update-id').val();
+                var name = $('#product-name').val();
+                var introduce = $('#product-introduce').val();
+                var price = $('#product-price').val();
+                var type = $('#product-type').val();
+                $.post("<?php echo U('API/ProductAPI/update_product');?>",
+                        {
+                            'id':id,
+                            'name':name,
+                            'introduce':introduce,
+                            'type':type,
+                            'price':price,
+                        },
+                        function (data,status) {
+                            if(data.response == 1)
+                            {
+                                window.location.reload();
+                            }
+                        }
+                );
+            });
+
+            //下架产品
+            $(".down-product").on('click',function () {
+                var id = $(this).data('id');
+                $("#down-confirm").on('click',function () {
+                    $.post("<?php echo U('API/ProductAPI/down_product');?>",
+                            {
+                                'id':id,
+                                'status':0,
+                            },
+                            function (data,status) {
+                                if(data.response == 1)
+                                {
+                                    window.location.reload();
+                                }
+                            }
+                    );
+                });
             });
         });
     </script>

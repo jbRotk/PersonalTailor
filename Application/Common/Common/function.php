@@ -1,4 +1,6 @@
 <?php
+use Think\Upload;
+
 /**
  * Created by PhpStorm.
  * User: BrazZ
@@ -26,4 +28,34 @@ function cropImage($img_path)
 function getFactorID()
 {
     return session('manufactor');
+}
+
+function Upload($config,$name,$name_id,$model)
+{
+    $upload = new Upload($config);
+
+    $info = $upload->upload();
+    if(!$info)
+    {
+        echo "info erro<br>";
+        return false;
+    }
+    else
+    {
+        foreach ($info as $file)
+        {
+
+            $img_msg['img_path'] = $config['rootPath'].$file['savepath'].$file['savename'];
+            if(cropImage($img_msg['img_path']))
+            {
+                $img_msg[$name] = $name_id;
+                $model->add($img_msg);
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+    return true;
 }
