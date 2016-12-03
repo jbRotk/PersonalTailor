@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>微定制</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -29,12 +29,16 @@
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/plugins/daterangepicker/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!--header-link-->
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--header-script-->
+    
     <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -45,9 +49,9 @@
     <!-- 图标部分 -->
     <a href="index2.html" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-mini"><b>P</b>Tr</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE</span>
+        <span class="logo-lg"><b>Personal</b>Tailor</span>
     </a>
     <!--  顶部栏Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -379,6 +383,7 @@
                         <ul class="treeview-menu">
                             <li><a href="<?php echo U('ManufactorAdmin/Product/regist_product');?>"><i class="fa fa-circle-o"></i>添加商品</a></li>
                             <li><a href="<?php echo U('ManufactorAdmin/Product/list_product');?>"><i class="fa fa-circle-o"></i>商品列表</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Product/list_down_products');?>"><i class="fa fa-circle-o"></i>下架商品列表</a></li>
                             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
                         </ul>
                     </li>
@@ -391,7 +396,7 @@
             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
                             <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> 活动列表</a></li>
                             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
                         </ul>
@@ -755,9 +760,9 @@
 <!--BootStrap Notify-->
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.js"></script>
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/bootstrap-notify.min.js"></script>
-<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/Gruntfile.js"></script>
+<!--<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/Gruntfile.js"></script>
 <script src="<?php echo C('PUBLIC_PATH');?>/notify-js/package.js"></script>
-<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/test_meteor.js"></script>
+<script src="<?php echo C('PUBLIC_PATH');?>/notify-js/test_meteor.js"></script>-->
 </body>
 
 </html>
