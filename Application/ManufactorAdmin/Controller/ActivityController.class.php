@@ -30,7 +30,7 @@ class ActivityController extends AuthController
             if($activity->addActivity($activity_msg))
             {
             }
-            $this->redirect('ManufactorAdmin/Activity/List_activities');
+            $this->redirect('ManufactorAdmin/Activity/list_activities');
         }
     }
 

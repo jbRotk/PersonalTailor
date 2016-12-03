@@ -357,3 +357,23 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
 SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0245s ]
 SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=35 )  [ RunTime:0.0246s ]
 
+[ 2016-12-03T23:08:58+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=36 )  [ RunTime:0.0252s ]
+
+[ 2016-12-03T23:09:00+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0301s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=37 )  [ RunTime:0.0587s ]
+
