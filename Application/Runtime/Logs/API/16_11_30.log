@@ -1,0 +1,1772 @@
+[ 2016-11-30T09:22:43+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0237s ]
+
+[ 2016-11-30T09:22:49+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0632s ]
+
+[ 2016-11-30T09:58:43+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/regist_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0216s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: INSERT INTO `tb_product` (`name`,`introduce`,`price`,`type`,`status`,`createtime`,`shop_id`) VALUES ('事实','阿斯顿撒旦','22','水水','1','2016-11-30 09:11:42','4') [ RunTime:0.0541s ]
+
+[ 2016-11-30T10:04:22+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/regist_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0224s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0221s ]
+SQL: INSERT INTO `tb_product` (`name`,`introduce`,`price`,`type`,`status`,`createtime`,`shop_id`) VALUES ('玛丹娜','么撒大','2','撒旦','1','2016-11-30 10:11:22','4') [ RunTime:0.0319s ]
+
+[ 2016-11-30T10:13:44+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/regist_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0314s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0292s ]
+SQL: INSERT INTO `tb_product` (`name`,`introduce`,`price`,`type`,`status`,`createtime`,`shop_id`) VALUES ('asda是的','21','22','231 ','1','2016-11-30 10:11:43','4') [ RunTime:0.0368s ]
+
+[ 2016-11-30T10:16:28+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/regist_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0225s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0217s ]
+SQL: INSERT INTO `tb_product` (`name`,`introduce`,`price`,`type`,`status`,`createtime`,`shop_id`) VALUES ('3333','123','123','123','1','2016-11-30 10:11:28','4') [ RunTime:0.0292s ]
+
+[ 2016-11-30T10:26:21+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/regist_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0226s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0233s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0227s ]
+SQL: INSERT INTO `tb_product` (`name`,`introduce`,`price`,`type`,`status`,`createtime`,`shop_id`) VALUES ('12321321','213','123','123','1','2016-11-30 10:11:21','4') [ RunTime:0.0414s ]
+
+[ 2016-11-30T10:55:56+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2016-11-30T10:56:07+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2016-11-30T10:56:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001643s ]
+
+[ 2016-11-30T10:57:00+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2016-11-30T10:57:04+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-11-30T10:57:44+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-11-30T10:57:50+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-11-30T10:58:05+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2016-11-30T11:02:09+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2016-11-30T11:02:42+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2016-11-30T11:03:50+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-11-30T11:04:10+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-11-30T11:05:00+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-30T11:13:43+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0241s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=25 ) [ RunTime:0.0552s ]
+NOTIC: [8] Undefined index: mapping_name E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 283 行.
+NOTIC: [8] Undefined index: id E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 290 行.
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0250s ]
+SQL: DELETE FROM `tb_productimg` WHERE `product_id` = null [ RunTime:0.0232s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=29 ) [ RunTime:0.0326s ]
+NOTIC: [8] Undefined index: mapping_name E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 283 行.
+NOTIC: [8] Undefined index: id E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 290 行.
+SQL: DELETE FROM `tb_productimg` WHERE `product_id` = null [ RunTime:0.0227s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] md5() expects parameter 1 to be string, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Behavior\ParseTemplateBehavior.class.php 第 101 行.
+NOTIC: [2] is_file() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 104 行.
+NOTIC: [2] md5() expects parameter 1 to be string, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 112 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 277 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 228 行.
+NOTIC: [2] preg_match_all() expects parameter 2 to be string, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 258 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 415 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 148 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2016-11-30T13:11:21+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0176s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=21 ) [ RunTime:0.0369s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=21 ) [ RunTime:0.0420s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=22 ) [ RunTime:0.0506s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=22 ) [ RunTime:0.0156s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=23 ) [ RunTime:0.0207s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=23 ) [ RunTime:0.0153s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=24 ) [ RunTime:0.0219s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=24 ) [ RunTime:0.0218s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=26 ) [ RunTime:0.0222s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=26 ) [ RunTime:0.0161s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=27 ) [ RunTime:0.0213s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=27 ) [ RunTime:0.0161s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=28 ) [ RunTime:0.0222s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=28 ) [ RunTime:0.0161s ]
+
+[ 2016-11-30T13:13:52+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0227s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=30 ) [ RunTime:0.0307s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=30 ) [ RunTime:0.0275s ]
+
+[ 2016-11-30T13:19:15+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0220s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=31 ) [ RunTime:0.0281s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=31 ) [ RunTime:0.0253s ]
+
+[ 2016-11-30T13:21:52+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0178s ]
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, object given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(): Invalid argument E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:24:16+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0155s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [4096] Object of class Think\Db\Driver\Mysql could not be converted to string E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:24:23+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0162s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [4096] Object of class Think\Db\Driver\Mysql could not be converted to string E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/id): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/tb_): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/tb_productimg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/1): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(/jb555host/PersonalTailor/Array): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:26:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0296s ]
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:28:18+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0176s ]
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:28:36+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0253s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0259s ]
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:33:33+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0229s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0230s ]
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:33:42+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0244s ]
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(../Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:36:28+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0172s ]
+
+[ 2016-11-30T13:36:31+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0221s ]
+
+[ 2016-11-30T13:36:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0221s ]
+
+[ 2016-11-30T13:36:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0221s ]
+
+[ 2016-11-30T13:36:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0290s ]
+
+[ 2016-11-30T13:36:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0278s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0277s ]
+
+[ 2016-11-30T13:36:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0224s ]
+
+[ 2016-11-30T13:36:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0210s ]
+
+[ 2016-11-30T13:36:33+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0593s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0286s ]
+
+[ 2016-11-30T13:38:52+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined index: products_id E:\xmapp\htdocs\jb555host\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0242s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductModel.class.php 第 49 行.
+
+[ 2016-11-30T13:40:20+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0237s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0244s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductModel.class.php 第 49 行.
+
+[ 2016-11-30T13:40:43+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0256s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0236s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductModel.class.php 第 49 行.
+
+[ 2016-11-30T13:40:54+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0233s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductModel.class.php 第 50 行.
+
+[ 2016-11-30T13:41:35+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0178s ]
+
+[ 2016-11-30T13:42:29+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0156s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [4096] Object of class Think\Db\Driver\Mysql could not be converted to string E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+
+[ 2016-11-30T13:42:59+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0225s ]
+
+[ 2016-11-30T13:43:38+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0228s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0218s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=32 )  [ RunTime:0.0228s ]
+
+[ 2016-11-30T13:45:30+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0226s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=32 )  [ RunTime:0.0224s ]
+
+[ 2016-11-30T13:46:00+08:00 ] ::1 /jb555host/PersonalTailor/API/ProductAPI/del_products/products_id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0305s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=32 )  [ RunTime:0.0297s ]
+
+[ 2016-11-30T13:47:03+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0216s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=32 )  [ RunTime:0.0207s ]
+NOTIC: [2] unlink(./Uploads/2016-11-30/583e61deb3960.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+NOTIC: [2] unlink(./Uploads/2016-11-30/583e61deb6f1b.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=32 ) [ RunTime:0.0510s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=32 ) [ RunTime:0.0287s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=32 )  [ RunTime:0.0215s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=32 ) [ RunTime:0.0219s ]
+
+[ 2016-11-30T13:49:17+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0156s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0168s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0234s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0222s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0151s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0152s ]
+
+[ 2016-11-30T13:49:21+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0182s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0174s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0163s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0170s ]
+
+[ 2016-11-30T13:49:22+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0230s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0236s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0238s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0237s ]
+
+[ 2016-11-30T13:49:22+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0337s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0328s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0306s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0323s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0310s ]
+
+[ 2016-11-30T13:49:23+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0297s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.3289s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0272s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0289s ]
+
+[ 2016-11-30T13:49:23+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0298s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0297s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0295s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0304s ]
+
+[ 2016-11-30T13:49:24+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0227s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=33 )  [ RunTime:0.0213s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=33 ) [ RunTime:0.0213s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=33 ) [ RunTime:0.0231s ]
+
+[ 2016-11-30T13:51:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0412s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0166s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0276s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0236s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0167s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0173s ]
+
+[ 2016-11-30T13:51:50+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0170s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0159s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0148s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0163s ]
+
+[ 2016-11-30T13:51:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0177s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0168s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0160s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0165s ]
+
+[ 2016-11-30T13:51:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0217s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0222s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0216s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0543s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0203s ]
+
+[ 2016-11-30T13:51:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0224s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0215s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0218s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0221s ]
+
+[ 2016-11-30T13:51:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0178s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0158s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0157s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0167s ]
+
+[ 2016-11-30T13:51:52+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0283s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0287s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=34 )  [ RunTime:0.0285s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=34 ) [ RunTime:0.0289s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=34 ) [ RunTime:0.0272s ]
+
+[ 2016-11-30T13:53:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0309s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=35 )  [ RunTime:0.0291s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=35 ) [ RunTime:0.0358s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=35 ) [ RunTime:0.0334s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=35 )  [ RunTime:0.0321s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=35 ) [ RunTime:0.0296s ]
+
+[ 2016-11-30T13:53:50+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0218s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=35 )  [ RunTime:0.0218s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=35 ) [ RunTime:0.0207s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=35 ) [ RunTime:0.0224s ]
+
+[ 2016-11-30T13:53:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0278s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=35 )  [ RunTime:0.0268s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=35 ) [ RunTime:0.0269s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=35 ) [ RunTime:0.0263s ]
+
+[ 2016-11-30T13:53:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0230s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=35 )  [ RunTime:0.0233s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=35 ) [ RunTime:0.0220s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=35 ) [ RunTime:0.0228s ]
+
+[ 2016-11-30T13:53:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0228s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=35 )  [ RunTime:0.0234s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=35 ) [ RunTime:0.0234s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=35 ) [ RunTime:0.0232s ]
+
+[ 2016-11-30T13:56:10+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0296s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=36 )  [ RunTime:0.0307s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=36 ) [ RunTime:0.0389s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=36 ) [ RunTime:0.0338s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=36 )  [ RunTime:0.0293s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=36 ) [ RunTime:0.0292s ]
+
+[ 2016-11-30T13:56:50+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0225s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0222s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0293s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0295s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0222s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0220s ]
+
+[ 2016-11-30T13:56:57+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0157s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0167s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0167s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0149s ]
+
+[ 2016-11-30T13:56:57+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0191s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0179s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0166s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0165s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0169s ]
+
+[ 2016-11-30T13:56:57+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0245s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0248s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0246s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0243s ]
+
+[ 2016-11-30T13:56:57+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0169s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0167s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0158s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0159s ]
+
+[ 2016-11-30T13:56:58+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0265s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0266s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0251s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0249s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0255s ]
+
+[ 2016-11-30T13:56:58+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0238s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0241s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0221s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0239s ]
+
+[ 2016-11-30T13:56:58+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0276s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0273s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=37 )  [ RunTime:0.0272s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=37 ) [ RunTime:0.0267s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=37 ) [ RunTime:0.0264s ]
+
+[ 2016-11-30T14:00:45+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0164s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0167s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0239s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0219s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0160s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0157s ]
+
+[ 2016-11-30T14:00:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0230s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0208s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0204s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0209s ]
+
+[ 2016-11-30T14:00:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0183s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0168s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0180s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0172s ]
+
+[ 2016-11-30T14:00:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0313s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0312s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0312s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0316s ]
+
+[ 2016-11-30T14:00:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0307s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0289s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0291s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0293s ]
+
+[ 2016-11-30T14:00:46+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0232s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0235s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0230s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0230s ]
+
+[ 2016-11-30T14:00:47+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0227s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0222s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0225s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0207s ]
+
+[ 2016-11-30T14:00:47+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0212s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=38 )  [ RunTime:0.0216s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=38 ) [ RunTime:0.0206s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=38 ) [ RunTime:0.0216s ]
+
+[ 2016-11-30T14:02:56+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0182s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=39 )  [ RunTime:0.0162s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=39 ) [ RunTime:0.0477s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=39 ) [ RunTime:0.0231s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=39 )  [ RunTime:0.0171s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=39 ) [ RunTime:0.0159s ]
+
+[ 2016-11-30T14:13:23+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0173s ]
+
+[ 2016-11-30T14:13:27+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0284s ]
+
+[ 2016-11-30T14:13:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0169s ]
+
+[ 2016-11-30T14:13:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0162s ]
+
+[ 2016-11-30T14:40:42+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0166s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `img_path` FROM `tb_productimg` WHERE ( product_id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `img_path` FROM `tb_productimg` WHERE ( product_id= ) 
+
+[ 2016-11-30T14:40:48+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0170s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `img_path` FROM `tb_productimg` WHERE ( product_id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `img_path` FROM `tb_productimg` WHERE ( product_id= ) 
+
+[ 2016-11-30T14:40:57+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `img_path` FROM `tb_productimg` WHERE ( product_id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `img_path` FROM `tb_productimg` WHERE ( product_id= ) 
+
+[ 2016-11-30T14:41:22+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0219s ]
+
+[ 2016-11-30T14:42:32+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0300s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=40 )  [ RunTime:0.0294s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=40 ) [ RunTime:0.0510s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=40 ) [ RunTime:0.0352s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=40 )  [ RunTime:0.0280s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=40 ) [ RunTime:0.0283s ]
+
+[ 2016-11-30T14:42:38+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0214s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=20 )  [ RunTime:0.0220s ]
+NOTIC: [2] unlink(./Uploads/2016-11-27/583ae0423c91e.jpg): No such file or directory E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductimgModel.class.php 第 64 行.
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=20 ) [ RunTime:0.0297s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=20 ) [ RunTime:0.0289s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=20 )  [ RunTime:0.0229s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=20 ) [ RunTime:0.0221s ]
+
+[ 2016-11-30T14:43:39+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] Undefined index: products_id E:\xmapp\htdocs\jb555host\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0240s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductModel.class.php 第 49 行.
+
+[ 2016-11-30T14:43:51+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] Undefined index: products_id E:\xmapp\htdocs\jb555host\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0212s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ProductModel.class.php 第 49 行.
+
+[ 2016-11-30T14:45:10+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0265s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0248s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=41 )  [ RunTime:0.0259s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=41 ) [ RunTime:0.0336s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=41 ) [ RunTime:0.0317s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=41 )  [ RunTime:0.0274s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=41 ) [ RunTime:0.0240s ]
+
+[ 2016-11-30T16:12:36+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0309s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=18 )  [ RunTime:0.0307s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=18 ) [ RunTime:0.0431s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=18 ) [ RunTime:0.0401s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=18 )  [ RunTime:0.0297s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=18 ) [ RunTime:0.0306s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=19 )  [ RunTime:0.0298s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=19 ) [ RunTime:0.0359s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=19 ) [ RunTime:0.0375s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=19 )  [ RunTime:0.0301s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=19 ) [ RunTime:0.0307s ]
+
+[ 2016-11-30T16:16:33+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0172s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=42 )  [ RunTime:0.0163s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=42 ) [ RunTime:0.0238s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=42 ) [ RunTime:0.0447s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=42 )  [ RunTime:0.0163s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=42 ) [ RunTime:0.0170s ]
+
+[ 2016-11-30T16:19:13+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0300s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=43 )  [ RunTime:0.0299s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=43 ) [ RunTime:0.0359s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=43 ) [ RunTime:0.0335s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=43 )  [ RunTime:0.0301s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=43 ) [ RunTime:0.0295s ]
+
+[ 2016-11-30T16:23:38+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0208s ]
+
+[ 2016-11-30T16:24:07+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ManufactorAPI/ResetPassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0179s ]
+NOTIC: [2] Missing argument 2 for Common\Model\ManufactorModel::check_passwd(), called in E:\xmapp\htdocs\jb555host\PersonalTailor\Application\API\Controller\ManufactorAPIController.class.php on line 84 and defined E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ManufactorModel.class.php 第 43 行.
+NOTIC: [8] Undefined variable: passwd E:\xmapp\htdocs\jb555host\PersonalTailor\Application\Common\Model\ManufactorModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_manufactor` WHERE `id` = 123456 AND `Password` = null  [ RunTime:0.0161s ]
+SQL: UPDATE `tb_manufactor` SET `Password`='123' WHERE ( id=14 ) [ RunTime:0.0246s ]
+
+[ 2016-11-30T16:24:11+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0158s ]
+
+[ 2016-11-30T16:25:05+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0309s ]
+
+[ 2016-11-30T16:25:08+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0225s ]
+
+[ 2016-11-30T22:43:17+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0312s ]
+
+[ 2016-11-30T22:43:19+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0176s ]
+

@@ -1,0 +1,118 @@
+<extend name="Public/tpl/base_admin_page" />
+
+<block name="slidebar-product">
+    <li class="active treeview">
+        <a href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span>商品管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+            <li class="active"><a href="{:U('ManufactorAdmin/Product/regist_product')}"><i class="fa fa-circle-o"></i>添加商品</a></li>
+            <li><a href="{:U('ManufactorAdmin/Product/list_product')}"><i class="fa fa-circle-o"></i>商品列表</a></li>
+            <li><a href="{:U('ManufactorAdmin/Product/list_down_products')}"><i class="fa fa-circle-o"></i>下架商品列表</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
+        </ul>
+    </li>
+</block>
+
+<block name="content-wrapper">
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                产品管理
+                <small>添加产品</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Forms</a></li>
+                <li class="active">General Elements</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6">
+                                    <form role="form" id="regist-form" action="{:U('ManufactorAdmin/Product/regist_feedback')}" method="post" enctype="multipart/form-data">
+                                        <div class="form-group" data-bind="validationElement: name">
+                                            <label for="name">名称 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="请输入产品名称"   />
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="introduce">简介信息 <span class="text-red">*</span></label>
+                                            <textarea rows="2" class="form-control" name="introduce" id="introduce" placeholder="请输入简介信息" ></textarea>
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="price">价格 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="price" id="price" placeholder="请输入产品价格"  />
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="type">类型 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="type" id="type" placeholder="请输入产品类型"  />
+                                        </div>
+                                        <div class="form-group" >
+                                            <label >产品图片<span class="text-red">*</span></label>
+                                            <input type="file" name="file[]" multiple="multiple" id="img1">
+                                            <input type="file" name="file[]" multiple="multiple" id="img2">
+                                            <input type="file" name="file[]" multiple="multiple" id="img3">
+                                        </div>
+                                        <div class="box-footer">
+                                            <div class="row">
+                                                <div class="col-md-offset-3 col-md-6 text-right">
+                                                    <button type="submit" class="btn btn-primary" id="add">添加</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</block>
+<block name="script-more">
+    <!--<script>
+        $(document).ready(function () {
+            $("#add").on('click',function () {
+                var name = $('#name').val();
+                var introduce = $('#introduce').val();
+                var price = $('#price').val();
+                var type = $('#type').val();
+                var form_data = new FormData();
+                form_data.append('photo[]',$('#img1')[0].files[0]);
+                form_data.append('photo[]',$('#img2')[0].files[0]);
+                form_data.append('photo[]',$('#img3')[0].files[0]);
+                form_data.append('name',name);
+                form_data.append('introduce',introduce);
+                form_data.append('price',price);
+                form_data.append('type',type);
+                $.ajax({
+                    url: "{:U('API/ProductAPI/regist_product')}",
+                    type: 'POST',
+                    cache: false,
+                    data: form_data,
+                    processData: false,
+                    contentType: false
+                }).done(function(res) {
+                    alert(1)
+                }).fail(function(res) {
+                    alert(0)
+                });
+            });
+        });
+    </script>-->
+</block>
+
+
+

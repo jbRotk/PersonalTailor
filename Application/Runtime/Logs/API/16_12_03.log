@@ -1,0 +1,35 @@
+[ 2016-12-03T09:34:42+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/down_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0260s ]
+SQL: UPDATE `tb_product` SET `id`='50',`status`='1' WHERE `id` = 50 [ RunTime:0.0567s ]
+
+[ 2016-12-03T09:34:50+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/down_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0244s ]
+SQL: UPDATE `tb_product` SET `id`='50',`status`='0' WHERE `id` = 50 [ RunTime:0.0321s ]
+
+[ 2016-12-03T09:35:11+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/ProductAPI/del_products.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `tb_productimg` [ RunTime:0.0300s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=50 )  [ RunTime:0.0306s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=50 ) [ RunTime:0.0379s ]
+SQL: DELETE FROM `tb_product` WHERE ( id=50 ) [ RunTime:0.0371s ]
+SQL: SELECT `img_path` FROM `tb_productimg` WHERE ( product_id=50 )  [ RunTime:0.0305s ]
+SQL: DELETE FROM `tb_productimg` WHERE ( product_id=50 ) [ RunTime:0.0289s ]
+

@@ -1,0 +1,30 @@
+[ 2016-11-26T15:24:10+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/Regist/PostForm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant Is_Post - assumed 'Is_Post' E:\xmapp\htdocs\jb555host\PersonalTailor\Application\API\Controller\RegistController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE `Name` = 'sadsadsd' AND `Phone` = 'sadasd' AND `Password` = '111'  [ RunTime:0.0251s ]
+SQL: INSERT INTO `tb_manufactor` (`Name`,`Phone`,`Password`) VALUES ('sadsadsd','sadasd','111') [ RunTime:0.0630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001351s ]
+
+[ 2016-11-26T15:28:28+08:00 ] ::1 /jb555host/PersonalTailor/index.php/API/Regist/PostForm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [8] Use of undefined constant Is_Post - assumed 'Is_Post' E:\xmapp\htdocs\jb555host\PersonalTailor\Application\API\Controller\RegistController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE `Name` = 'sadsadsd' AND `Phone` = 'sadasd' AND `Password` = '22'  [ RunTime:0.0217s ]
+SQL: INSERT INTO `tb_manufactor` (`Name`,`Phone`,`Password`) VALUES ('sadsadsd','sadasd','22') [ RunTime:0.0453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
