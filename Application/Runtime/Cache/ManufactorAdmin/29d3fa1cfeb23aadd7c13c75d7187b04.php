@@ -504,7 +504,7 @@
                                         </td>
                                         <!--活动详情-->
                                         <td class="col-md-1 text-center">
-                                            <a  href="javascript:;" data-toggle="modal" data-target="#activity-content" id="activity-content-btn" ><span class="content-action" >查看详情</span></a>
+                                            <a  href="javascript:;" data-toggle="modal" data-target="#activity-content" ><span class="content-action" >查看详情</span></a>
                                         </td>
                                         <!--起止时间-->
                                         <td class="col-md-2 text-center">
@@ -677,7 +677,7 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <h4 class="modal-title">活动详情</h4>
                                     </div>
-                                    <div class="modal-body" style="height: 400px; overflow-y: scroll">
+                                    <div class="modal-body" style="height: auto; overflow-y: scroll">
                                         <div class="row">
                                             <div class="col-md-offset-1 col-md-10">
                                                 <div id="data-activity-content">
@@ -941,8 +941,8 @@
                 $("#data-introduce").text(introduce_data);
             });
 
-            $("#activity-content-btn").on('click',function () {
-                var id =  $(this).parent().parent().find('#object-id').val();
+            $(".content-action").on('click',function () {
+                var id =  $(this).parent().parent().parent().find('#object-id').val();
                 //alert(id);
                 $.post("<?php echo U('API/ShopActivityAPI/search_activity_msg');?>",
                         {
