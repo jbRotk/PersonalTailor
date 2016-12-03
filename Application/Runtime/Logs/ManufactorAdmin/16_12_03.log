@@ -15859,3 +15859,59 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
 
+[ 2016-12-03T23:27:37+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/List_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0327s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0323s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE `shop_id` = 4 AND `state` = 1  [ RunTime:0.0324s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='32' ) LIMIT 1   [ RunTime:0.0327s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='33' ) LIMIT 1   [ RunTime:0.0314s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='34' ) LIMIT 1   [ RunTime:0.0323s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='35' ) LIMIT 1   [ RunTime:0.0332s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='36' ) LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='37' ) LIMIT 1   [ RunTime:0.0315s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='38' ) LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='39' ) LIMIT 1   [ RunTime:0.0329s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='40' ) LIMIT 1   [ RunTime:0.0325s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='41' ) LIMIT 1   [ RunTime:0.0314s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='42' ) LIMIT 1   [ RunTime:0.0311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-12-03T23:27:41+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/add_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
