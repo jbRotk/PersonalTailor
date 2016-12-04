@@ -1537,3 +1537,356 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
 
+[ 2016-12-04T20:32:55+08:00 ] ::1 /PersonalTailor/ManufactorAdmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005850s ]
+
+[ 2016-12-04T20:32:57+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/ManufactorAdmin/Public/footer.html): failed to open stream: No such file or directory E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Template.class.php 第 785 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011074s ]
+
+[ 2016-12-04T20:33:02+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Login/feedback.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8] Use of undefined constant Is_Post - assumed 'Is_Post' E:\xmapp\htdocs\PersonalTailor\Application\ManufactorAdmin\Controller\LoginController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE `Phone` = '13850103135' AND `Password` = '123'  [ RunTime:0.0241s ]
+
+[ 2016-12-04T20:33:02+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-12-04T20:33:11+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/AccountManager/reset_name.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\3cbc5b36dec71a96cde3e7bc89faa784.php 第 701 行.
+NOTIC: [8] Undefined variable: id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\3cbc5b36dec71a96cde3e7bc89faa784.php 第 715 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-12-04T20:33:13+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/AccountManager/reset_passwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: manufacotr_id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\cb4fe9f3b540a215c096d641f31d7e6d.php 第 716 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-12-04T20:33:14+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/AccountManager/reset_name.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\3cbc5b36dec71a96cde3e7bc89faa784.php 第 701 行.
+NOTIC: [8] Undefined variable: id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\3cbc5b36dec71a96cde3e7bc89faa784.php 第 715 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-12-04T20:33:16+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Shop/shopsetting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant name - assumed 'name' E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 464 行.
+NOTIC: [8] Undefined variable: shop_msg E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 464 行.
+NOTIC: [8] Use of undefined constant introduce - assumed 'introduce' E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 468 行.
+NOTIC: [8] Undefined variable: shop_msg E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 468 行.
+NOTIC: [8] Use of undefined constant address - assumed 'address' E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 472 行.
+NOTIC: [8] Undefined variable: shop_msg E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 472 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 476 行.
+NOTIC: [8] Undefined variable: shop_msg E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 476 行.
+NOTIC: [8] Undefined variable: manufactor_id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 723 行.
+NOTIC: [8] Undefined variable: manufactor_id E:\xmapp\htdocs\PersonalTailor\Application\Runtime\Cache\ManufactorAdmin\a5b4a5833af6edaceabc186b05a89114.php 第 736 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-12-04T20:33:17+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Shop/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+ERR: 非法操作:index2
+
+[ 2016-12-04T20:33:20+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Product/regist_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-12-04T20:33:21+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Product/list_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0261s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT * FROM `tb_product` WHERE `shop_id` = 4 AND `status` = 1  [ RunTime:0.0241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-12-04T20:34:10+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Product/list_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0292s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0291s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `tb_product` WHERE `shop_id` = 4 AND `status` = 1  [ RunTime:0.0291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-12-04T20:39:50+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Product/list_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0236s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0231s ]
+SQL: SELECT * FROM `tb_product` WHERE `shop_id` = 4 AND `status` = 1  [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2016-12-04T20:43:55+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Product/list_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0331s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `tb_product` WHERE `shop_id` = 4 AND `status` = 1  [ RunTime:0.0333s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-12-04T20:53:25+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Product/list_product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0181s ]
+SQL: SELECT `id` FROM `tb_shop` WHERE ( manufactor_id=14 ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT * FROM `tb_product` WHERE `shop_id` = 4 AND `status` = 1  [ RunTime:0.0172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-12-04T20:53:32+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-12-04T21:02:53+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+

@@ -142,3 +142,43 @@ SQL: DELETE FROM `tb_shopactivity` WHERE ( id=45 ) [ RunTime:0.0239s ]
 SQL: DELETE FROM `tb_shopactivity` WHERE ( id=46 ) [ RunTime:0.0242s ]
 NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
 
+[ 2016-12-04T20:33:11+08:00 ] ::1 /PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0243s ]
+
+[ 2016-12-04T20:33:14+08:00 ] ::1 /PersonalTailor/index.php/API/ManufactorAPI/ManufactorMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tb_manufactor` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `tb_manufactor` WHERE ( id=14 )  [ RunTime:0.0234s ]
+
+[ 2016-12-04T20:33:16+08:00 ] ::1 /PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0247s ]
+
+[ 2016-12-04T20:33:18+08:00 ] ::1 /PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0224s ]
+
