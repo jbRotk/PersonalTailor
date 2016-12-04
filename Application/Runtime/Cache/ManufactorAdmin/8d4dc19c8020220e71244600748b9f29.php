@@ -9,9 +9,9 @@
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://www.bootcdn.cn/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://www.bootcdn.cn/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -905,7 +905,7 @@
 <!-- jQuery 2.2.3 -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdn.bootcss.com/jqueryui/1.11.4/jquery-ui.min.css"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge('uibutton', $.ui.button);
@@ -1070,7 +1070,7 @@
 <!-- jQuery Knob Chart -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/plugins/knob/jquery.knob.js"></script>
 <!-- daterangepicker -->
-<script src="https://www.bootcdn.cn/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.11.2/moment.min.js"></script>
 <script src="<?php echo C('ADMINLTE_PATH');?>/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/plugins/datepicker/bootstrap-datepicker.js"></script>
