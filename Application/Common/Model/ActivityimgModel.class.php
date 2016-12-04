@@ -48,4 +48,16 @@ class ActivityimgModel extends BaseModel
         $result = str_replace("/Template/Public/lib/kindeditor/attached/image/","/Uploads/activity_pic/",$content);
         return $result;
     }
+
+    public function del_activity_img($activity_id)
+    {
+        if(Del_img($this,'activity_id',$activity_id,'img_path'))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

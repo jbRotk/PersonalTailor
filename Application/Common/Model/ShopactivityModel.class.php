@@ -53,4 +53,55 @@ class ShopactivityModel extends RelationModel
         $result = $this->relation(true)->where($map)->select();
         return $result;
     }
+    public function up_down_activity($activity_id,$state)
+    {
+        $map['state'] = $state;
+        if($this->where('id='.$activity_id)->save($map))
+        {
+            return true;
+        }
+        return false;
+    }
+    public function delActivities($activities_id)
+    {
+        $result = '';
+        $activityimg = new ActivityimgModel();
+        $activitytitleimg = new ActivitytitleimgModel();
+        $tag = 0;
+        foreach ($activities_id as $activity_id)
+        {
+            if($this->where('id='.$activity_id)->delete())
+            {
+                if($activitytitleimg->del_activity_title_img($activity_id))
+                {
+                    if($activityimg->del_activity_img($activity_id))
+                    {
+                        $tag++;
+                    }
+                }
+            }
+        }
+        if($tag == sizeof($activities_id))
+        {
+            $result = array(
+                'response'=>1,
+                'data'=>'全部删除成功',
+            );
+        }
+        else if($tag == 0)
+        {
+            $result = array(
+                'response'=>0,
+                'data'=>'删除失败',
+            );
+        }
+        else
+        {
+            $result = array(
+                'response'=>1,
+                'data'=>'部分删除成功',
+            );
+        }
+        return $result;
+    }
 }

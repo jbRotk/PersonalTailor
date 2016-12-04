@@ -23,4 +23,13 @@ class ActivitytitleimgModel extends BaseModel
         }
         return false;
     }
+
+    public function del_activity_title_img($activity_id)
+    {
+        if(Del_img($this,'activity_id',$activity_id,'img_path'))
+        {
+            return true;
+        }
+        return false;
+    }
 }

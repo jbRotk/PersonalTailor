@@ -45,4 +45,14 @@ class ActivityController extends AuthController
         $this->assign('activities',$result);
         $this->display();
     }
+
+    public function del_activities()
+    {
+
+    }
+
+    public function editor_activity()
+    {
+
+    }
 }

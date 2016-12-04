@@ -67,6 +67,7 @@
                                 <tbody >
                                 <volist name="activities" id="arr">
                                     <tr>
+                                        <!--活动图片-->
                                         <td class="col-md-3">
                                             <div class="col-md-2 choose">
                                                 <input type="checkbox" name="checkbox" class="product-checkbox" id="object-id" value="{$arr.id}" checked="false"/>
@@ -242,7 +243,7 @@
                                     <div class="modal-body" style="height: 400px; overflow-y: scroll">
                                         <div class="row">
                                             <div class="col-md-offset-1 col-md-10">
-                                                <div id="data-content-activity">
+                                                <div id="data-introduce">
                                                 </div>
                                             </div>
                                         </div>
@@ -312,6 +313,7 @@
                 $("#data-introduce").text(introduce_data);
             });
 
+            //获取活动内容
             $(".content-action").on('click',function () {
                 var id =  $(this).parent().parent().parent().find('#object-id').val();
                 //alert(id);
@@ -339,9 +341,9 @@
                         check_boxs.each(function () {
                             check_values.push($(this).val());
                         });
-                        $.post("{:U('API/ProductAPI/del_products')}",
+                        $.post("{:U('API/ShopActivityAPI/del_activities')}",
                                 {
-                                    'products_id':check_values,
+                                    'activities_id':check_values,
                                 },
                                 function (data,status) {
                                 }
@@ -448,9 +450,9 @@
             $(".down-product").on('click',function () {
                 var id = $(this).data('id');
                 $("#down-confirm").on('click',function () {
-                    $.post("{:U('API/ProductAPI/down_product')}",
+                    $.post("{:U('API/ShopActivityAPI/up_down_activity')}",
                             {
-                                'id':id,
+                                'activity_id':id,
                                 'status':0,
                             },
                             function (data,status) {

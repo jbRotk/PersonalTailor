@@ -36,7 +36,15 @@ class ProductimgModel extends BaseModel
 
     public function del_img($product_id)
     {
-        $imgs_path = $this->where('product_id='.$product_id)->field('img_path')->select();
+        if(Del_img($this,'product_id',$product_id,'img_path'))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        /*$imgs_path = $this->where('product_id='.$product_id)->field('img_path')->select();
         foreach ($imgs_path as $img_path) {
             unlink($img_path['img_path']);
 
@@ -45,7 +53,7 @@ class ProductimgModel extends BaseModel
         {
             return true;
         }
-        return false;
+        return false;*/
     }
 
 

@@ -47,17 +47,17 @@
                                     <form role="form" id="regist-form" action="{:U('ManufactorAdmin/Activity/Add_feedback')}" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="title">活动标题 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"   />
+                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"  required />
                                         </div>
                                         <div class="form-group" >
                                             <label for="introduce">活动简介 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)"   />
+                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)" />
                                             <!--<textarea id="introduce" name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>-->
 
                                         </div>
                                         <div class="form-group" >
                                             <label >活动图片<span class="text-red">*</span></label>
-                                            <input type="file" name="img[]">
+                                            <input type="file" name="img[]" required>
                                         </div>
                                         <div class="form-group" >
                                             <label for="content">活动内容 <span class="text-red">*</span></label>
@@ -65,11 +65,11 @@
                                         </div>
                                         <div class="form-group" >
                                             <label for="start-time">开始时间 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间"  />
+                                            <input type="date" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间" required />
                                         </div>
                                         <div class="form-group" >
                                             <label for="end-time">结束时间 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  />
+                                            <input type="date" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  required/>
                                         </div>
                                         <div class="box-footer">
                                             <div class="row">

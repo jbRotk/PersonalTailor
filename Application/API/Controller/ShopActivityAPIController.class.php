@@ -56,4 +56,41 @@ class ShopActivityAPIController extends RestController
                 break;
         }
     }
+    public function up_down_activity()
+    {
+        switch ($this->_method)
+        {
+            case 'post':
+                $result = '';
+                $activity_id = $_POST['activity_id'];
+                $state = $_POST['state'];
+                $shopactivity = new ShopactivityModel();
+                if($shopactivity->up_down_activity($activity_id,$state))
+                {
+                    $result = array(
+                        'response'=>1,
+                    );
+                }
+                else
+                {
+                    $result = array(
+                        'response'=>0,
+                    );
+                }
+                $this->response($result,'json');
+                break;
+        }
+    }
+    public function del_activities()
+    {
+        switch ($this->_method)
+        {
+            case 'post':
+                $activities_id = $_POST['activities_id'];
+                $shopactivity = new ShopactivityModel();
+                $result = $shopactivity->delActivities($activities_id);
+                $this->response($result);
+                break;
+        }
+    }
 }

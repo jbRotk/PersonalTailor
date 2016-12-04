@@ -63,10 +63,9 @@ class ProductModel extends RelationModel
         $product_img = new ProductimgModel();
         foreach ($products_id as $product_id)
         {
-            echo 1;
-            $product_img->del_img($product_id);
             if($this->where('id='.$product_id)->delete())
             {
+                //删除图片
                 if($product_img->del_img($product_id))
                 {
                     $tag+=1;

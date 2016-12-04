@@ -46,6 +46,7 @@ function Upload($config,$name,$name_id,$model)
         {
 
             $img_msg['img_path'] = $config['rootPath'].$file['savepath'].$file['savename'];
+            //对图片裁剪 标准 250 * 180
             if(cropImage($img_msg['img_path']))
             {
                 $img_msg[$name] = $name_id;
@@ -58,4 +59,16 @@ function Upload($config,$name,$name_id,$model)
         }
     }
     return true;
+}
+function Del_img($model,$name,$name_id,$img_path_name)
+{
+    $imgs_path = $model->where($name.'='.$name_id)->field($img_path_name)->select();
+    foreach ($imgs_path as $img_path) {
+        unlink($img_path[$img_path_name]);
+    }
+    if($model->where($name.'='.$name_id)->delete())
+    {
+        return true;
+    }
+    return false;
 }
