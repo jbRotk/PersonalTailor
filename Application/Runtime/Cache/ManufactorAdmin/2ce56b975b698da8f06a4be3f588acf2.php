@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><<<<<<< HEAD
+<?php if (!defined('THINK_PATH')) exit();?>﻿
 <!DOCTYPE html>
 <html>
 <head>
