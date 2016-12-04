@@ -32,8 +32,6 @@
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!--header-link-->
     
-    <link rel="stylesheet" href="<?php echo C('LIB_PATH');?>/kindeditor/themes/default/default.css" />
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,9 +40,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!--header-script-->
     
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/lang/zh_CN.js"></script>
-
     <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -347,12 +342,12 @@
                     <!--active treevice 是被选择的测滑栏-->
 
                     <!--侧滑栏-->
-                    <li>
-                        <a href="<?php echo U('ManufactorAdmin/Index/index');?>">
-                            <i class="glyphicon glyphicon-home"></i> <span>页面主页</span>
-                            <span class="pull-right-container"></span>
-                        </a>
-                    </li>
+                    <li class="index active">
+    <a href="<?php echo U('ManufactorAdmin/Index/index');?>">
+        <i class="glyphicon glyphicon-home"></i> <span>页面主页</span>
+        <span class="pull-right-container"></span>
+    </a>
+</li>
                     <li class="treeview">
                         <a href="#">
                             <i class="glyphicon glyphicon-user"></i>
@@ -393,20 +388,20 @@
                             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
                         </ul>
                     </li>
-                    <li class="active treeview">
-    <a href="#">
-        <i class="fa fa-hand-peace-o"></i>
-        <span>店铺活动</span>
-        <span class="pull-right-container">
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-hand-peace-o"></i>
+                            <span>店铺活动</span>
+                            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-    </a>
-    <ul class="treeview-menu">
-        <li class="active"><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-        <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
-        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
-    </ul>
-</li>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+                        </ul>
+                    </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-list-alt"></i>
@@ -446,66 +441,81 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                店铺活动
-                <small>添加活动</small>
+                Dashboard
+                <small>Control panel</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                <li><a href="#">店铺活动</a></li>
-                <li class="active">添加活动</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="box">
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-md-offset-3 col-md-6">
-                                    <form role="form" id="regist-form" action="<?php echo U('ManufactorAdmin/Activity/Add_feedback');?>" method="post" enctype="multipart/form-data">
-                                        <div class="form-group">
-                                            <label for="title">活动标题 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"  required />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="introduce">活动简介 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)" />
-                                            <!--<textarea id="introduce" name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>-->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner">
+                            <h3>150</h3>
 
-                                        </div>
-                                        <div class="form-group" >
-                                            <label >活动图片<span class="text-red">*</span></label>
-                                            <input type="file" name="img[]" required>
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="content">活动内容 <span class="text-red">*</span></label>
-                                            <textarea id="content" name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="start-time">开始时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间" required />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="end-time">结束时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  required/>
-                                        </div>
-                                        <div class="box-footer">
-                                            <div class="row">
-                                                <div class="col-md-offset-3 col-md-6 text-right">
-                                                    <button type="submit" class="btn btn-primary" id="add">添加</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            <p>New Orders</p>
                         </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                            <p>Bounce Rate</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-yellow">
+                        <div class="inner">
+                            <h3>44</h3>
+
+                            <p>User Registrations</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red">
+                        <div class="inner">
+                            <h3>65</h3>
+
+                            <p>Unique Visitors</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-pie-graph"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
             </div>
         </section>
+        <!-- /.content -->
     </div>
 
     <!-- /.content-wrapper -->
@@ -722,42 +732,6 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
-
-    <script>
-        var editor;
-        KindEditor.ready(function(K) {
-            editor = K.create('textarea[name="content"]', {
-                allowFileManager : true
-            });
-            K('#add').click(function(e) {
-               // alert(editor.html());
-            });
-            /*K('input[name=isEmpty]').click(function(e) {
-                alert(editor.isEmpty());
-            });
-            K('input[name=getText]').click(function(e) {
-                alert(editor.text());
-            });
-            K('input[name=selectedHtml]').click(function(e) {
-                alert(editor.selectedHtml());
-            });
-            K('input[name=setHtml]').click(function(e) {
-                editor.html('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=setText]').click(function(e) {
-                editor.text('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=insertHtml]').click(function(e) {
-                editor.insertHtml('<strong>插入HTML</strong>');
-            });
-            K('input[name=appendHtml]').click(function(e) {
-                editor.appendHtml('<strong>添加HTML</strong>');
-            });
-            K('input[name=clear]').click(function(e) {
-                editor.html('');
-            });*/
-        });
-    </script>
 
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/bootstrap/js/bootstrap.min.js"></script>
@@ -827,8 +801,6 @@
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!--header-link-->
     
-    <link rel="stylesheet" href="<?php echo C('LIB_PATH');?>/kindeditor/themes/default/default.css" />
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -837,9 +809,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!--header-script-->
     
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/lang/zh_CN.js"></script>
-
     <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -1142,12 +1111,12 @@
                     <!--active treevice 是被选择的测滑栏-->
 
                     <!--侧滑栏-->
-                    <li>
-                        <a href="<?php echo U('ManufactorAdmin/Index/index');?>">
-                            <i class="glyphicon glyphicon-home"></i> <span>页面主页</span>
-                            <span class="pull-right-container"></span>
-                        </a>
-                    </li>
+                    <li class="index active">
+    <a href="<?php echo U('ManufactorAdmin/Index/index');?>">
+        <i class="glyphicon glyphicon-home"></i> <span>页面主页</span>
+        <span class="pull-right-container"></span>
+    </a>
+</li>
                     <li class="treeview">
                         <a href="#">
                             <i class="glyphicon glyphicon-user"></i>
@@ -1188,20 +1157,20 @@
                             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
                         </ul>
                     </li>
-                    <li class="active treeview">
-    <a href="#">
-        <i class="fa fa-hand-peace-o"></i>
-        <span>店铺活动</span>
-        <span class="pull-right-container">
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-hand-peace-o"></i>
+                            <span>店铺活动</span>
+                            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-    </a>
-    <ul class="treeview-menu">
-        <li class="active"><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-        <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
-        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
-    </ul>
-</li>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+                        </ul>
+                    </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-list-alt"></i>
@@ -1241,66 +1210,81 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                店铺活动
-                <small>添加活动</small>
+                Dashboard
+                <small>Control panel</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                <li><a href="#">店铺活动</a></li>
-                <li class="active">添加活动</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="box">
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-md-offset-3 col-md-6">
-                                    <form role="form" id="regist-form" action="<?php echo U('ManufactorAdmin/Activity/Add_feedback');?>" method="post" enctype="multipart/form-data">
-                                        <div class="form-group">
-                                            <label for="title">活动标题 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"  required />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="introduce">活动简介 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)" />
-                                            <!--<textarea id="introduce" name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>-->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner">
+                            <h3>150</h3>
 
-                                        </div>
-                                        <div class="form-group" >
-                                            <label >活动图片<span class="text-red">*</span></label>
-                                            <input type="file" name="img[]" required>
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="content">活动内容 <span class="text-red">*</span></label>
-                                            <textarea id="content" name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="start-time">开始时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间" required />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="end-time">结束时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  required/>
-                                        </div>
-                                        <div class="box-footer">
-                                            <div class="row">
-                                                <div class="col-md-offset-3 col-md-6 text-right">
-                                                    <button type="submit" class="btn btn-primary" id="add">添加</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            <p>New Orders</p>
                         </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                            <p>Bounce Rate</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-yellow">
+                        <div class="inner">
+                            <h3>44</h3>
+
+                            <p>User Registrations</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red">
+                        <div class="inner">
+                            <h3>65</h3>
+
+                            <p>Unique Visitors</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-pie-graph"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
             </div>
         </section>
+        <!-- /.content -->
     </div>
 
     <!-- /.content-wrapper -->
@@ -1517,42 +1501,6 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
-
-    <script>
-        var editor;
-        KindEditor.ready(function(K) {
-            editor = K.create('textarea[name="content"]', {
-                allowFileManager : true
-            });
-            K('#add').click(function(e) {
-               // alert(editor.html());
-            });
-            /*K('input[name=isEmpty]').click(function(e) {
-                alert(editor.isEmpty());
-            });
-            K('input[name=getText]').click(function(e) {
-                alert(editor.text());
-            });
-            K('input[name=selectedHtml]').click(function(e) {
-                alert(editor.selectedHtml());
-            });
-            K('input[name=setHtml]').click(function(e) {
-                editor.html('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=setText]').click(function(e) {
-                editor.text('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=insertHtml]').click(function(e) {
-                editor.insertHtml('<strong>插入HTML</strong>');
-            });
-            K('input[name=appendHtml]').click(function(e) {
-                editor.appendHtml('<strong>添加HTML</strong>');
-            });
-            K('input[name=clear]').click(function(e) {
-                editor.html('');
-            });*/
-        });
-    </script>
 
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo C('ADMINLTE_PATH');?>/bootstrap/js/bootstrap.min.js"></script>

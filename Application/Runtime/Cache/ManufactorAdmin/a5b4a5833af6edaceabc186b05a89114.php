@@ -32,8 +32,6 @@
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!--header-link-->
     
-    <link rel="stylesheet" href="<?php echo C('LIB_PATH');?>/kindeditor/themes/default/default.css" />
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,9 +40,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!--header-script-->
     
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/lang/zh_CN.js"></script>
-
     <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -366,18 +361,18 @@
                             <li><a href="<?php echo U('ManufactorAdmin/AccountManager/reset_passwd');?>"><i class="fa fa-circle-o"></i> 修改密码</a></li>
                         </ul>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-university"></i> <span>店铺管理</span>
-                            <span class="pull-right-container">
+                    <li class="active treeview">
+    <a href="<?php echo U('ManufactorAdmin/Store/storesetting');?>">
+        <i class="fa fa-university"></i> <span>店铺管理</span>
+        <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="<?php echo U('ManufactorAdmin/Shop/shopsetting');?>"><i class="fa fa-circle-o"></i> 店铺信息管理</a></li>
-                            <li><a href="index2.html"><i class="fa fa-circle-o"></i> 宣传图管理</a></li>
-                        </ul>
-                    </li>
+    </a>
+    <ul class="treeview-menu">
+        <li class="active"><a href="<?php echo U('ManufactorAdmin/Shop/shopsetting');?>"><i class="fa fa-circle-o"></i> 店铺信息管理</a></li>
+        <li><a href="index2.html"><i class="fa fa-circle-o"></i> 宣传图管理</a></li>
+    </ul>
+</li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-shopping-cart"></i>
@@ -393,20 +388,20 @@
                             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
                         </ul>
                     </li>
-                    <li class="active treeview">
-    <a href="#">
-        <i class="fa fa-hand-peace-o"></i>
-        <span>店铺活动</span>
-        <span class="pull-right-container">
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-hand-peace-o"></i>
+                            <span>店铺活动</span>
+                            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-    </a>
-    <ul class="treeview-menu">
-        <li class="active"><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-        <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
-        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
-    </ul>
-</li>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+                        </ul>
+                    </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-list-alt"></i>
@@ -446,13 +441,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                店铺活动
-                <small>添加活动</small>
+                店铺管理
+                <small>设置店铺信息</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                <li><a href="#">店铺活动</a></li>
-                <li class="active">添加活动</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Forms</a></li>
+                <li class="active">General Elements</li>
             </ol>
         </section>
 
@@ -464,37 +459,31 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-md-offset-3 col-md-6">
-                                    <form role="form" id="regist-form" action="<?php echo U('ManufactorAdmin/Activity/Add_feedback');?>" method="post" enctype="multipart/form-data">
-                                        <div class="form-group">
-                                            <label for="title">活动标题 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"  required />
+                                    <form role="form" action="#" >
+                                        <div class="form-group" data-bind="validationElement: name">
+                                            <label for="name">名称 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="请输入店铺名称"  value="<?php echo ($shop_msg[0][name]); ?>" />
                                         </div>
                                         <div class="form-group" >
-                                            <label for="introduce">活动简介 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)" />
-                                            <!--<textarea id="introduce" name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>-->
-
+                                            <label for="introduce">简介信息 <span class="text-red">*</span></label>
+                                            <textarea rows="2" class="form-control" name="introduce" id="introduce" placeholder="请输入简介信息" ><?php echo ($shop_msg[0][introduce]); ?></textarea>
                                         </div>
                                         <div class="form-group" >
-                                            <label >活动图片<span class="text-red">*</span></label>
-                                            <input type="file" name="img[]" required>
+                                            <label for="address">地址信息 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="address" id="address" placeholder="请输入店铺地址" value="<?php echo ($shop_msg[0][address]); ?>" />
                                         </div>
                                         <div class="form-group" >
-                                            <label for="content">活动内容 <span class="text-red">*</span></label>
-                                            <textarea id="content" name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
+                                            <label for="type">类型 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="type" id="type" placeholder="请输入店铺类型" value="<?php echo ($shop_msg[0][type]); ?>" />
                                         </div>
                                         <div class="form-group" >
-                                            <label for="start-time">开始时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间" required />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="end-time">结束时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  required/>
+                                            <label for="img">首页图片<span class="text-red">*</span></label>
+                                            <input type="file" id="img">
                                         </div>
                                         <div class="box-footer">
                                             <div class="row">
                                                 <div class="col-md-offset-3 col-md-6 text-right">
-                                                    <button type="submit" class="btn btn-primary" id="add">添加</button>
+                                                    <button type="submit" class="btn btn-primary" id="setting">设置</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -724,38 +713,35 @@
 </script>
 
     <script>
-        var editor;
-        KindEditor.ready(function(K) {
-            editor = K.create('textarea[name="content"]', {
-                allowFileManager : true
+        $(document).ready(function () {
+            $("#setting").on('click',function () {
+                var name = $('#name').val();
+                var introduce = $('#introduce').val();
+                var address = $('#address').val();
+                var type = $('#type').val();
+                $.post("<?php echo U('API/ShopAPI/regist_shop');?>",
+                        {
+                            'manufactor_id':"<?php echo (getFactorID($manufactor_id)); ?>",
+                            'name': name,
+                            'introduce':introduce,
+                            'address':address,
+                            'type':type,
+                        },
+                        function (data,status) {
+                            alert(data.data);
+                        }
+                );
             });
-            K('#add').click(function(e) {
-               // alert(editor.html());
+            $.post("<?php echo U('API/ShopAPI/get_msg');?>",
+                    {
+                        'manufactor_id':"<?php echo (getFactorID($manufactor_id)); ?>",
+                    },
+                    function (data,status) {
+                        $('#name').val(data[0].name);
+                        $('#introduce').val(data[0].introduce);
+                        $('#address').val(data[0].address);
+                        $('#type').val(data[0].type);
             });
-            /*K('input[name=isEmpty]').click(function(e) {
-                alert(editor.isEmpty());
-            });
-            K('input[name=getText]').click(function(e) {
-                alert(editor.text());
-            });
-            K('input[name=selectedHtml]').click(function(e) {
-                alert(editor.selectedHtml());
-            });
-            K('input[name=setHtml]').click(function(e) {
-                editor.html('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=setText]').click(function(e) {
-                editor.text('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=insertHtml]').click(function(e) {
-                editor.insertHtml('<strong>插入HTML</strong>');
-            });
-            K('input[name=appendHtml]').click(function(e) {
-                editor.appendHtml('<strong>添加HTML</strong>');
-            });
-            K('input[name=clear]').click(function(e) {
-                editor.html('');
-            });*/
         });
     </script>
 
@@ -827,8 +813,6 @@
     <link rel="stylesheet" href="<?php echo C('ADMINLTE_PATH');?>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!--header-link-->
     
-    <link rel="stylesheet" href="<?php echo C('LIB_PATH');?>/kindeditor/themes/default/default.css" />
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -837,9 +821,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!--header-script-->
     
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="<?php echo C('LIB_PATH');?>/kindeditor/lang/zh_CN.js"></script>
-
     <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -1161,18 +1142,18 @@
                             <li><a href="<?php echo U('ManufactorAdmin/AccountManager/reset_passwd');?>"><i class="fa fa-circle-o"></i> 修改密码</a></li>
                         </ul>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-university"></i> <span>店铺管理</span>
-                            <span class="pull-right-container">
+                    <li class="active treeview">
+    <a href="<?php echo U('ManufactorAdmin/Store/storesetting');?>">
+        <i class="fa fa-university"></i> <span>店铺管理</span>
+        <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="<?php echo U('ManufactorAdmin/Shop/shopsetting');?>"><i class="fa fa-circle-o"></i> 店铺信息管理</a></li>
-                            <li><a href="index2.html"><i class="fa fa-circle-o"></i> 宣传图管理</a></li>
-                        </ul>
-                    </li>
+    </a>
+    <ul class="treeview-menu">
+        <li class="active"><a href="<?php echo U('ManufactorAdmin/Shop/shopsetting');?>"><i class="fa fa-circle-o"></i> 店铺信息管理</a></li>
+        <li><a href="index2.html"><i class="fa fa-circle-o"></i> 宣传图管理</a></li>
+    </ul>
+</li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-shopping-cart"></i>
@@ -1188,20 +1169,20 @@
                             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>展示商品管理</a></li>
                         </ul>
                     </li>
-                    <li class="active treeview">
-    <a href="#">
-        <i class="fa fa-hand-peace-o"></i>
-        <span>店铺活动</span>
-        <span class="pull-right-container">
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-hand-peace-o"></i>
+                            <span>店铺活动</span>
+                            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-    </a>
-    <ul class="treeview-menu">
-        <li class="active"><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
-        <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
-        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
-    </ul>
-</li>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/add_activity');?>"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
+                            <li><a href="<?php echo U('ManufactorAdmin/Activity/list_activities');?>"><i class="fa fa-circle-o"></i> 活动列表</a></li>
+                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+                        </ul>
+                    </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-list-alt"></i>
@@ -1241,13 +1222,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                店铺活动
-                <small>添加活动</small>
+                店铺管理
+                <small>设置店铺信息</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                <li><a href="#">店铺活动</a></li>
-                <li class="active">添加活动</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Forms</a></li>
+                <li class="active">General Elements</li>
             </ol>
         </section>
 
@@ -1259,37 +1240,31 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-md-offset-3 col-md-6">
-                                    <form role="form" id="regist-form" action="<?php echo U('ManufactorAdmin/Activity/Add_feedback');?>" method="post" enctype="multipart/form-data">
-                                        <div class="form-group">
-                                            <label for="title">活动标题 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"  required />
+                                    <form role="form" action="#" >
+                                        <div class="form-group" data-bind="validationElement: name">
+                                            <label for="name">名称 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="请输入店铺名称"  value="<?php echo ($shop_msg[0][name]); ?>" />
                                         </div>
                                         <div class="form-group" >
-                                            <label for="introduce">活动简介 <span class="text-red">*</span></label>
-                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)" />
-                                            <!--<textarea id="introduce" name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>-->
-
+                                            <label for="introduce">简介信息 <span class="text-red">*</span></label>
+                                            <textarea rows="2" class="form-control" name="introduce" id="introduce" placeholder="请输入简介信息" ><?php echo ($shop_msg[0][introduce]); ?></textarea>
                                         </div>
                                         <div class="form-group" >
-                                            <label >活动图片<span class="text-red">*</span></label>
-                                            <input type="file" name="img[]" required>
+                                            <label for="address">地址信息 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="address" id="address" placeholder="请输入店铺地址" value="<?php echo ($shop_msg[0][address]); ?>" />
                                         </div>
                                         <div class="form-group" >
-                                            <label for="content">活动内容 <span class="text-red">*</span></label>
-                                            <textarea id="content" name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
+                                            <label for="type">类型 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="type" id="type" placeholder="请输入店铺类型" value="<?php echo ($shop_msg[0][type]); ?>" />
                                         </div>
                                         <div class="form-group" >
-                                            <label for="start-time">开始时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间" required />
-                                        </div>
-                                        <div class="form-group" >
-                                            <label for="end-time">结束时间 <span class="text-red">*</span></label>
-                                            <input type="date" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  required/>
+                                            <label for="img">首页图片<span class="text-red">*</span></label>
+                                            <input type="file" id="img">
                                         </div>
                                         <div class="box-footer">
                                             <div class="row">
                                                 <div class="col-md-offset-3 col-md-6 text-right">
-                                                    <button type="submit" class="btn btn-primary" id="add">添加</button>
+                                                    <button type="submit" class="btn btn-primary" id="setting">设置</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1519,38 +1494,35 @@
 </script>
 
     <script>
-        var editor;
-        KindEditor.ready(function(K) {
-            editor = K.create('textarea[name="content"]', {
-                allowFileManager : true
+        $(document).ready(function () {
+            $("#setting").on('click',function () {
+                var name = $('#name').val();
+                var introduce = $('#introduce').val();
+                var address = $('#address').val();
+                var type = $('#type').val();
+                $.post("<?php echo U('API/ShopAPI/regist_shop');?>",
+                        {
+                            'manufactor_id':"<?php echo (getFactorID($manufactor_id)); ?>",
+                            'name': name,
+                            'introduce':introduce,
+                            'address':address,
+                            'type':type,
+                        },
+                        function (data,status) {
+                            alert(data.data);
+                        }
+                );
             });
-            K('#add').click(function(e) {
-               // alert(editor.html());
+            $.post("<?php echo U('API/ShopAPI/get_msg');?>",
+                    {
+                        'manufactor_id':"<?php echo (getFactorID($manufactor_id)); ?>",
+                    },
+                    function (data,status) {
+                        $('#name').val(data[0].name);
+                        $('#introduce').val(data[0].introduce);
+                        $('#address').val(data[0].address);
+                        $('#type').val(data[0].type);
             });
-            /*K('input[name=isEmpty]').click(function(e) {
-                alert(editor.isEmpty());
-            });
-            K('input[name=getText]').click(function(e) {
-                alert(editor.text());
-            });
-            K('input[name=selectedHtml]').click(function(e) {
-                alert(editor.selectedHtml());
-            });
-            K('input[name=setHtml]').click(function(e) {
-                editor.html('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=setText]').click(function(e) {
-                editor.text('<h3>Hello KindEditor</h3>');
-            });
-            K('input[name=insertHtml]').click(function(e) {
-                editor.insertHtml('<strong>插入HTML</strong>');
-            });
-            K('input[name=appendHtml]').click(function(e) {
-                editor.appendHtml('<strong>添加HTML</strong>');
-            });
-            K('input[name=clear]').click(function(e) {
-                editor.html('');
-            });*/
         });
     </script>
 
