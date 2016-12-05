@@ -2908,3 +2908,73 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
 
+[ 2016-12-05T17:28:00+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2016-12-05T17:28:00+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-12-05T17:28:00+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-12-05T17:28:04+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2016-12-05T17:28:04+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2016-12-05T17:28:04+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-12-05T17:28:04+08:00 ] ::1 /PersonalTailor/Uploads/activity_title_pic/2016-12-05/584530fdc69fe.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-12-05T17:28:11+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2016-12-05T17:28:11+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+
+[ 2016-12-05T17:28:11+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2016-12-05T17:28:11+08:00 ] ::1 /PersonalTailor/Uploads/activity_pic/20161205/20161205091846_65849.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-12-05T17:28:17+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+
+[ 2016-12-05T17:28:17+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+
+[ 2016-12-05T17:28:17+08:00 ] ::1 /PersonalTailor/index.php/ManufactorAdmin/Activity/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+

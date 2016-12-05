@@ -974,3 +974,17 @@ SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=58 )  [ RunTime
 SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=58 ) [ RunTime:0.0216s ]
 NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
 
+[ 2016-12-05T17:28:11+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=59 )  [ RunTime:0.0244s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='59' )  [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='59' )  [ RunTime:0.0240s ]
+
