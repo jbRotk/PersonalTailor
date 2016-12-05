@@ -15,7 +15,11 @@ class ShopactivityModel extends RelationModel
             'mapping_type'      => self::HAS_MANY,
             'foreign_key'   => 'activity_id',
             'mapping_fields	' =>'img_path',
-            'mapping_limit'=>'1',
+        ),
+        'Activityimg'=>array(
+            'mapping_type'      => self::HAS_MANY,
+            'foreign_key'   => 'activity_id',
+            'mapping_fields	' =>'img_path',
         ),
     );
     protected $_auto = array(
@@ -31,6 +35,7 @@ class ShopactivityModel extends RelationModel
         if($return_id)
         {
             $activity_img = new ActivityimgModel();
+            //将内容图片缓存 删除 移动到正式内容的图片文件夹内，以及存入数据库
             $new_content = $activity_img->deal_content_msg($return_id,$activity_msg['content']);
             if(!is_null($new_content))
             {
@@ -103,5 +108,41 @@ class ShopactivityModel extends RelationModel
             );
         }
         return $result;
+    }
+    public function search_activity_msg($activity_id)
+    {
+        $result = $this->relation(true)->where('id='.$activity_id)->select();
+        return $result;
+    }
+    public function update_activity($activity_id,$activity_msg)
+    {
+        //更新活动主题图片没完成
+        $old_activity_msg = $this->where('id='.$activity_id)->select();
+        $old_content = $old_activity_msg[0]['content'];
+        if(!is_null($old_content))
+        {
+            $new_content = $activity_msg['content'];
+            if($new_content == $old_content)
+            {}
+            //新旧的消息不相等的时候，则将旧内容的图片全删除，上传新内容的图片上去。
+            else
+            {
+                $activity_img = new ActivityimgModel();
+                if( $activity_img->del_activity_img($activity_id))
+                {
+                    //处理新内容的部分，上传内容的图片上去
+                    $dealed_new_content = $activity_img->deal_content_msg($activity_id,$new_content);
+                    if(!is_null($dealed_new_content))
+                    {
+                        //处理好了活动内容的部分
+                        $activity_msg['content'] = $dealed_new_content;
+                        $this->where('id='.$activity_id)->save($activity_msg);
+                        return true;
+                    }
+                }
+
+            }
+        }
+        return false;
     }
 }

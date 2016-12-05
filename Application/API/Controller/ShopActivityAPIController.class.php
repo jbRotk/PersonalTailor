@@ -51,8 +51,8 @@ class ShopActivityAPIController extends RestController
             case 'post':
                 $activity_id = $_POST['activity_id'];
                 $activity = new ShopactivityModel();
-                $result = $activity->where('id='.$activity_id)->select();
-                $this->response($result[0],'json');
+                $result = $activity->search_activity_msg($activity_id);
+                $this->response(jsonReturn($result[0],"查找成功","查找失败"),'json');
                 break;
         }
     }
@@ -93,4 +93,5 @@ class ShopActivityAPIController extends RestController
                 break;
         }
     }
+
 }

@@ -1,0 +1,108 @@
+<extend name="Public/tpl/base_admin_page" />
+<block name="header-link">
+    <link rel="stylesheet" href="{:C('LIB_PATH')}/kindeditor/themes/default/default.css" />
+    <script src="{:C('JS_PATH')}/common.js"></script>
+</block>
+<block name="header-script">
+    <script charset="utf-8" src="{:C('LIB_PATH')}/kindeditor/kindeditor-min.js"></script>
+    <script charset="utf-8" src="{:C('LIB_PATH')}/kindeditor/lang/zh_CN.js"></script>
+</block>
+
+<block name="content-wrapper">
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                店铺活动
+                <small>编辑活动</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+                <li><a href="#">店铺活动</a></li>
+                <li class="active">编辑活动</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6">
+                                    <form role="form" id="regist-form" action="{:U('ManufactorAdmin/Activity/edit_feedback')}" method="post" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label for="title">活动标题 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="title" id="title" placeholder="请输入活动标题"  required />
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="introduce">活动简介 <span class="text-red">*</span></label>
+                                            <input type="text" class="form-control" name="introduce" id="introduce" placeholder="请输入活动简介(20字以内)" />
+                                            <!--<textarea id="introduce" name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>-->
+
+                                        </div>
+                                        <div class="form-group" >
+                                            <label >活动图片<span class="text-red">*</span></label>
+                                            <input type="file" name="img[]" id="title-img" >
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="content">活动内容 <span class="text-red">*</span></label>
+                                            <textarea id="content" name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="start-time">开始时间 <span class="text-red">*</span></label>
+                                            <input type="date" class="form-control" name="start_time" id="start-time" placeholder="请选择开始时间" required />
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="end-time">结束时间 <span class="text-red">*</span></label>
+                                            <input type="date" class="form-control" name="end_time" id="end-time" placeholder="请选择结束时间"  required/>
+                                        </div>
+                                        <input name="id" id="activity_id" value="" hidden>
+                                        <div class="box-footer">
+                                            <div class="row">
+                                                <div class="col-md-offset-3 col-md-6 text-right">
+                                                    <button type="submit" class="btn btn-primary" id="设置">设置</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</block>
+
+<block name="script-more">
+    <script>
+
+        $(document).ready(function () {
+            var editor;
+            KindEditor.ready(function(K) {
+                editor = K.create('textarea[name="content"]', {
+                    allowFileManager : true
+                });
+                var id = getLinkVal('activity');
+                $.post("{:U('API/ShopActivityAPI/search_activity_msg')}",
+                        {
+                            'activity_id':id,
+                        },
+                        function (data,status) {
+                            var activity_msg = data.return;
+                            $("#activity_id").val(activity_msg.id);
+                            $("#title").val(activity_msg.title);
+                            $("#introduce").val(activity_msg.introduce);
+                            editor.html(activity_msg.content);
+                            $("#start-time").val(activity_msg.start_time);
+                            $("#end-time").val(activity_msg.end_time);
+                        }
+                );
+            });
+        })
+
+    </script>
+</block>

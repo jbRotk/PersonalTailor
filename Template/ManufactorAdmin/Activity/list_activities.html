@@ -108,7 +108,7 @@
 
                                             </div>
                                             <div>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#product-editor" data-id="{$arr.id}" class="edit-product"><i class="ion-checkmark-circled"></i>&nbsp;编辑活动</a>
+                                                <a href="{:U('ManufactorAdmin/Activity/edit_activity')}?activity={$arr.id}" data-id="{$arr.id}" class="edit-product"><i class="ion-checkmark-circled"></i>&nbsp;编辑活动</a>
                                             </div>
                                             <div>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#del" data-id="{$arr.id}" class="del-product"><i class="ion-close-circled"></i>&nbsp;删除活动</a>
@@ -161,59 +161,6 @@
                                         <button  type="button" class="btn" data-dismiss="modal">取消</button>
                                         <button type="button" class="btn btn-primary" data-dismiss="modal" id="del-all-confirm" value="">确定</button>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--编辑活动-->
-                        <div class="modal fade" id="product-editor" role="modal" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title">编辑物品</h4>
-                                    </div>
-                                    <div class="modal-body" style="height: auto; overflow-y: scroll">
-                                        <div class="row">
-                                            <div class="col-md-offset-3 col-md-6">
-                                                <form role="form" id="regist-form"   enctype="multipart/form-data">
-                                                    <div class="form-group" data-bind="validationElement: name">
-                                                        <label for="product-name">名称 <span class="text-red">*</span></label>
-                                                        <input type="text" class="form-control" name="name" id="product-name" placeholder="请输入产品名称"   />
-                                                    </div>
-                                                    <div class="form-group" >
-                                                        <label for="product-introduce">简介信息 <span class="text-red">*</span></label>
-                                                        <textarea rows="2" class="form-control" name="introduce" id="product-introduce" placeholder="请输入简介信息" ></textarea>
-                                                    </div>
-                                                    <div class="form-group" >
-                                                        <label for="product-price">价格 <span class="text-red">*</span></label>
-                                                        <input type="text" class="form-control" name="price" id="product-price" placeholder="请输入产品价格"  />
-                                                    </div>
-                                                    <div class="form-group" >
-                                                        <label for="product-type">类型 <span class="text-red">*</span></label>
-                                                        <input type="text" class="form-control" name="type" id="product-type" placeholder="请输入产品类型"  />
-                                                    </div>
-                                                    <input id="update-id" value="" hidden>
-                                                    <div class="form-group" >
-                                                        <label >产品图片<span class="text-red">*</span></label>
-
-                                                        <input type="file" name="file[]" multiple="multiple" id="img1" >
-                                                        <input type="file" name="file[]" multiple="multiple" id="img2">
-                                                        <input type="file" name="file[]" multiple="multiple" id="img3">
-                                                    </div>
-                                                    <div class="box-footer">
-                                                        <div class="row">
-                                                            <div class="col-md-offset-3 col-md-6 text-right">
-                                                                <button type="submit" class="btn btn-primary" id="product-update">更新</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--<div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
-                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -325,7 +272,7 @@
                             'activity_id':id,
                         },
                         function (data,status) {
-                            $("#data-activity-content").html(data.content);
+                            $("#data-activity-content").html(data.return.content);
                         }
                 );
             });
@@ -362,11 +309,6 @@
                     $('#select-all').val(0);
                     $('#select-all').text('全选');
                 }
-                /*else
-                 {
-                 $('#select-all').val(1);
-                 $('#select-all').text('取消全选');
-                 }*/
             });
             //全选
             $("#select-all").on('click',function () {
@@ -406,23 +348,6 @@
                     );
                     window.location.reload();
                 });
-            });
-
-            //编辑产品
-            $(".edit-product").on('click',function () {
-                var product_id = $(this).parent().parent().find(".down-product").data('id');
-                $('#update-id').val(product_id);
-                $.post("{:U('API/ProductAPI/product_msg')}",
-                        {
-                            'product_id':product_id,
-                        },
-                        function (data,status) {
-                            $('#product-name').val(data.name);
-                            $('#product-introduce').text(data.introduce);
-                            $('#product-price').val(data.price);
-                            $('#product-type').val(data.type);
-                        }
-                );
             });
 
             //更新产品

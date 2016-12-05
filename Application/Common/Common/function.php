@@ -29,6 +29,27 @@ function getFactorID()
 {
     return session('manufactor');
 }
+function jsonReturn($data,$success_data,$faild_data)
+{
+    $result = '';
+    if(!is_null($data))
+    {
+        $result = array(
+            "response"=>1,
+            "data"=>$success_data,
+            "return"=>$data
+        );
+    }
+    else
+    {
+        $result = array(
+            "response"=>0,
+            "data"=>$faild_data,
+            "return"=>null
+        );
+    }
+    return $result;
+}
 
 function Upload($config,$name,$name_id,$model)
 {

@@ -188,3 +188,789 @@ SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0237s ]
 SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0246s ]
 NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
 
+[ 2016-12-05T15:13:12+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0174s ]
+
+[ 2016-12-05T15:13:12+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0158s ]
+
+[ 2016-12-05T15:13:29+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0232s ]
+
+[ 2016-12-05T15:13:29+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0164s ]
+
+[ 2016-12-05T15:13:35+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0223s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:13:35+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0446s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0231s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:00+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0231s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:00+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0304s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:06+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0187s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:06+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0209s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:10+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0294s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:10+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0264s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:19+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0180s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:19+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0178s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:22+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0245s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:22+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0163s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:26+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0214s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:14:26+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0241s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:15:16+08:00 ] ::1 /PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0308s ]
+
+[ 2016-12-05T15:15:16+08:00 ] ::1 /PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0337s ]
+
+[ 2016-12-05T15:17:25+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=56 )  [ RunTime:0.0245s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T15:24:04+08:00 ] ::1 /PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0250s ]
+
+[ 2016-12-05T16:08:39+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0224s ]
+
+[ 2016-12-05T16:11:44+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0164s ]
+
+[ 2016-12-05T16:12:05+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0229s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0226s ]
+
+[ 2016-12-05T16:12:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0251s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0249s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0243s ]
+
+[ 2016-12-05T16:12:44+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0285s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0286s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0298s ]
+
+[ 2016-12-05T16:13:02+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=56 )  [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='56' )  [ RunTime:0.0224s ]
+
+[ 2016-12-05T16:14:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0315s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0320s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=56 ) [ RunTime:0.0529s ]
+SQL: SELECT `img_path` FROM `tb_activitytitleimg` WHERE ( activity_id=56 )  [ RunTime:0.0304s ]
+SQL: DELETE FROM `tb_activitytitleimg` WHERE ( activity_id=56 ) [ RunTime:0.0386s ]
+SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=56 )  [ RunTime:0.0315s ]
+SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=56 ) [ RunTime:0.0359s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T16:14:54+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0233s ]
+
+[ 2016-12-05T16:15:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0224s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0221s ]
+
+[ 2016-12-05T16:20:08+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0231s ]
+
+[ 2016-12-05T16:22:59+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0187s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0188s ]
+
+[ 2016-12-05T16:23:19+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0237s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0219s ]
+
+[ 2016-12-05T16:24:11+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0224s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0217s ]
+
+[ 2016-12-05T16:27:41+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0185s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0171s ]
+
+[ 2016-12-05T16:27:58+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0228s ]
+
+[ 2016-12-05T16:28:00+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0283s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0293s ]
+
+[ 2016-12-05T16:28:00+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0293s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0299s ]
+
+[ 2016-12-05T16:28:00+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0273s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0278s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0261s ]
+
+[ 2016-12-05T16:28:37+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0167s ]
+
+[ 2016-12-05T16:28:38+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0152s ]
+
+[ 2016-12-05T16:28:38+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0166s ]
+
+[ 2016-12-05T16:28:39+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0443s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0249s ]
+
+[ 2016-12-05T16:28:58+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0206s ]
+
+[ 2016-12-05T16:28:59+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0162s ]
+
+[ 2016-12-05T16:31:34+08:00 ] ::1 /PersonalTailor/index.php/API/ShopAPI/get_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `tb_shop` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `tb_shop` WHERE ( manufactor_id=14 )  [ RunTime:0.0165s ]
+
+[ 2016-12-05T16:31:49+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0193s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0184s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0186s ]
+
+[ 2016-12-05T17:02:17+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0234s ]
+
+[ 2016-12-05T17:06:26+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0218s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0224s ]
+
+[ 2016-12-05T17:06:28+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0156s ]
+
+[ 2016-12-05T17:06:51+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0229s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0222s ]
+
+[ 2016-12-05T17:09:01+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0297s ]
+
+[ 2016-12-05T17:09:02+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0291s ]
+
+[ 2016-12-05T17:09:27+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=57 )  [ RunTime:0.0218s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='57' )  [ RunTime:0.0229s ]
+
+[ 2016-12-05T17:09:42+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0326s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0310s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=57 ) [ RunTime:0.0545s ]
+SQL: SELECT `img_path` FROM `tb_activitytitleimg` WHERE ( activity_id=57 )  [ RunTime:0.0319s ]
+SQL: DELETE FROM `tb_activitytitleimg` WHERE ( activity_id=57 ) [ RunTime:0.0355s ]
+SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=57 )  [ RunTime:0.0304s ]
+SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=57 ) [ RunTime:0.0381s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T17:10:17+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=58 )  [ RunTime:0.0306s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0311s ]
+
+[ 2016-12-05T17:10:20+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=58 )  [ RunTime:0.0286s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0291s ]
+
+[ 2016-12-05T17:11:01+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=58 )  [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0232s ]
+
+[ 2016-12-05T17:11:13+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/search_activity_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `tb_shopactivity` WHERE ( id=58 )  [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `tb_activitytitleimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `tb_activityimg` WHERE ( 1=1 AND activity_id='58' )  [ RunTime:0.0230s ]
+
+[ 2016-12-05T17:12:09+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0170s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=58 ) [ RunTime:0.0227s ]
+SQL: SELECT `img_path` FROM `tb_activitytitleimg` WHERE ( activity_id=58 )  [ RunTime:0.0157s ]
+SQL: DELETE FROM `tb_activitytitleimg` WHERE ( activity_id=58 ) [ RunTime:0.0372s ]
+SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=58 )  [ RunTime:0.0168s ]
+SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=58 ) [ RunTime:0.0216s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+

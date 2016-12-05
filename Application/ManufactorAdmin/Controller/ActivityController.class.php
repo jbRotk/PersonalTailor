@@ -57,13 +57,25 @@ class ActivityController extends AuthController
         $this->display();
     }
 
-    public function del_activities()
+    public function edit_activity()
     {
-
+        $this->display();
     }
-
-    public function editor_activity()
+    public function edit_feedback()
     {
-
+        if(Is_Post)
+        {
+            $activity = new ShopactivityModel();
+            $activity_msg = $activity->create();
+            //转义
+            $activity_msg['content'] = htmlspecialchars_decode($activity_msg['content']);
+            if($activity->update_activity($activity_msg['id'],$activity_msg))
+            {
+            }
+            else
+            {
+            }
+            $this->redirect('ManufactorAdmin/Activity/list_activities');
+        }
     }
 }
