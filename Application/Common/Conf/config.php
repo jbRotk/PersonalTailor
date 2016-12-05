@@ -13,6 +13,7 @@ return array(
     'PUBLIC_PATH' => __ROOT__.'/'.'Template/Public',
     'TEMPLATE_PATH'=>__ROOT__.'/'.'Template',
     /*公共库路径*/
+    'IMG_PATH'=> __ROOT__.'/'.'Template/Public/img',
     'LIB_PATH'=> __ROOT__.'/'.'Template/Public/lib',
     'ADMINLTE_PATH' => __ROOT__.'/'.'Template/Public/lib/adminLTE',
     /*基础模板路径*/

@@ -1,0 +1,190 @@
+[ 2016-12-05T10:24:25+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/up_down_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: state E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ShopActivityAPIController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0255s ]
+SQL: UPDATE `tb_shopactivity` SET `state`=NULL WHERE ( id=53 ) [ RunTime:0.0515s ]
+
+[ 2016-12-05T10:24:25+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/up_down_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Undefined index: state E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ShopActivityAPIController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0217s ]
+SQL: UPDATE `tb_shopactivity` SET `state`=NULL WHERE ( id=53 ) [ RunTime:0.0296s ]
+
+[ 2016-12-05T10:32:46+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=53 )  [ RunTime:0.0171s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T10:32:46+08:00 ] ::1 /PersonalTailor/index.php/API/ProductAPI/product_msg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `tb_product` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `tb_product` WHERE ( id=53 )  [ RunTime:0.0226s ]
+NOTIC: [8] Undefined offset: 0 E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ProductAPIController.class.php 第 89 行.
+
+[ 2016-12-05T10:34:13+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0215s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=53 ) [ RunTime:0.0351s ]
+SQL: SELECT `img_path` FROM `tb_activitytitleimg` WHERE ( activity_id=53 )  [ RunTime:0.0225s ]
+SQL: DELETE FROM `tb_activitytitleimg` WHERE ( activity_id=53 ) [ RunTime:0.0276s ]
+SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=53 )  [ RunTime:0.0214s ]
+SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=53 ) [ RunTime:0.0455s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T10:34:13+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0240s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=53 ) [ RunTime:0.0229s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T10:59:39+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/up_down_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+NOTIC: [8] Undefined index: state E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ShopActivityAPIController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0240s ]
+SQL: UPDATE `tb_shopactivity` SET `state`=NULL WHERE ( id=54 ) [ RunTime:0.0312s ]
+
+[ 2016-12-05T10:59:39+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/up_down_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+NOTIC: [8] Undefined index: state E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ShopActivityAPIController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0162s ]
+SQL: UPDATE `tb_shopactivity` SET `state`=NULL WHERE ( id=54 ) [ RunTime:0.0222s ]
+
+[ 2016-12-05T11:00:24+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/up_down_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: state E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ShopActivityAPIController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0237s ]
+SQL: UPDATE `tb_shopactivity` SET `state`=NULL WHERE ( id=55 ) [ RunTime:0.0598s ]
+
+[ 2016-12-05T11:00:25+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/up_down_activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+NOTIC: [8] Undefined index: state E:\xmapp\htdocs\PersonalTailor\Application\API\Controller\ShopActivityAPIController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0237s ]
+SQL: UPDATE `tb_shopactivity` SET `state`=NULL WHERE ( id=55 ) [ RunTime:0.0303s ]
+
+[ 2016-12-05T11:06:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0224s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0229s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0219s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0326s ]
+SQL: SELECT `img_path` FROM `tb_activitytitleimg` WHERE ( activity_id=54 )  [ RunTime:0.0225s ]
+SQL: DELETE FROM `tb_activitytitleimg` WHERE ( activity_id=54 ) [ RunTime:0.0273s ]
+SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=54 )  [ RunTime:0.0234s ]
+SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=54 ) [ RunTime:0.0214s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0267s ]
+SQL: SELECT `img_path` FROM `tb_activitytitleimg` WHERE ( activity_id=55 )  [ RunTime:0.0230s ]
+SQL: DELETE FROM `tb_activitytitleimg` WHERE ( activity_id=55 ) [ RunTime:0.0279s ]
+SQL: SELECT `img_path` FROM `tb_activityimg` WHERE ( activity_id=55 )  [ RunTime:0.0234s ]
+SQL: DELETE FROM `tb_activityimg` WHERE ( activity_id=55 ) [ RunTime:0.0226s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0423s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0226s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T11:06:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0178s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0162s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0173s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0172s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0168s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T11:06:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0156s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0147s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0163s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0149s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0158s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+
+[ 2016-12-05T11:06:14+08:00 ] ::1 /PersonalTailor/index.php/API/ShopActivityAPI/del_activities.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `tb_shopactivity` [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `tb_activityimg` [ RunTime:0.0263s ]
+SQL: SHOW COLUMNS FROM `tb_activitytitleimg` [ RunTime:0.0258s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0238s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0252s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=54 ) [ RunTime:0.0237s ]
+SQL: DELETE FROM `tb_shopactivity` WHERE ( id=55 ) [ RunTime:0.0246s ]
+NOTIC: [8] Array to string conversion E:\xmapp\htdocs\PersonalTailor\ThinkPHP\Library\Think\Controller\RestController.class.php 第 295 行.
+

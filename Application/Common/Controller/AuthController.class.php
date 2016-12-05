@@ -12,7 +12,8 @@ class AuthController extends Controller
         $ssession_auth = session('manufactor');
         if(!$ssession_auth)
         {
-            $this->error("请先登录。。。",U('ManufactorAdmin/login/login'));
+            $this->redirect('ManufactorAdmin/login/login');
+            //$this->error("请先登录。。。",U('ManufactorAdmin/login/login'));
         }
         else
         {

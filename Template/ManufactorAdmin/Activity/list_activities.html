@@ -11,7 +11,7 @@
     <ul class="treeview-menu">
         <li><a href="{:U('ManufactorAdmin/Activity/add_activity')}"><i class="fa fa-circle-o"></i>添加店铺活动</a></li>
         <li class="active"><a href="{:U('ManufactorAdmin/Activity/list_activities')}"><i class="fa fa-circle-o"></i> 活动列表</a></li>
-        <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>历史活动</a></li>
+        <li><a href="{:U('ManufactorAdmin/Activity/history_activities')}"><i class="fa fa-circle-o"></i>历史活动</a></li>
     </ul>
 </li></block>
 
@@ -56,7 +56,7 @@
                             <table class="table no-margin">
                                 <thead>
                                 <tr style="background-color: #f9f9f9;">
-                                    <th class="col-md-3 text-center">商品图片</th>
+                                    <th class="col-md-3 text-center">活动图片</th>
                                     <th class="col-md-2 text-center" name="name" data-bind="click: orderClick"><span>活动标题&nbsp;<i class="fa fa-sort-asc"></i><i class="fa fa-sort-desc"></i></span></th>
                                     <th class="col-md-2 text-center">活动简介</th>
                                     <th class="col-md-1 text-center">活动详情</th>
@@ -103,29 +103,32 @@
                                         </td>
                                         <td class="col-md-2 text-center">
                                             <div>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#down-product" data-id="{$arr.id}" class="down-product"><i class="ion-minus-circled"></i>&nbsp;下架产品</a>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#down-product" data-id="{$arr.id}" class="down-product"><i class="ion-minus-circled"></i>&nbsp;取消活动</a>
                                                 <!--<a href="javascript:;" data-bind="visible: status() == 2, click: $root.up"><i class="ion-minus-circled"></i>&nbsp;上架热门</a>-->
 
                                             </div>
                                             <div>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#product-editor" data-id="{$arr.id}" class="edit-product"><i class="ion-checkmark-circled"></i>&nbsp;编辑产品</a>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#product-editor" data-id="{$arr.id}" class="edit-product"><i class="ion-checkmark-circled"></i>&nbsp;编辑活动</a>
                                             </div>
                                             <div>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#del" data-id="{$arr.id}" class="del-product"><i class="ion-close-circled"></i>&nbsp;删除产品</a>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#del" data-id="{$arr.id}" class="del-product"><i class="ion-close-circled"></i>&nbsp;删除活动</a>
                                             </div>
                                         </td>
                                     </tr>
                                 </volist>
                                 </tbody>
-                                <tbody style="display: none;" data-bind="visible: total() == 0">
+                                <tbody  data-bind="visible: total() == 0">
                                 <tr>
                                     <td colspan="6" class="text-center nofind">
+                                        <if condition="$activities eq null">
+                                            <img src="{:C('IMG_PATH')}/data-null.jpg">
+                                        </if>
                                     </td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <!--删除产品-->
+                        <!--删除活动-->
                         <div class="modal fade" id="del"  role="modal" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
@@ -143,7 +146,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--删除所有-->
+                        <!--删除复选框所有活动-->
                         <div class="modal fade" id="del-all"  role="modal" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
@@ -161,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--编辑商品-->
+                        <!--编辑活动-->
                         <div class="modal fade" id="product-editor" role="modal" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -214,16 +217,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!--下架物品-->
+                        <!--取消活动发布-->
                         <div class="modal fade" id="down-product"  role="modal" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title">下架商品</h4>
+                                        <h4 class="modal-title">取消发布活动</h4>
                                     </div>
                                     <div class="modal-body">
-                                        确认下架吗 <span data-bind="text: opItem().name"></span>?
+                                        确认取消发布吗 <span data-bind="text: opItem().name"></span>?
                                     </div>
                                     <div class="modal-footer">
                                         <button  type="button" class="btn" data-dismiss="modal">取消</button>
@@ -394,9 +397,9 @@
                 var value = Array();
                 value.push($(this).data('id'));
                 $("#confirm").on('click',function () {
-                    $.post("{:U('API/ProductAPI/del_products')}",
+                    $.post("{:U('API/ShopActivityAPI/del_activities')}",
                             {
-                                'products_id':value,
+                                'activities_id':value,
                             },
                             function (data,status) {
                             }

@@ -45,6 +45,17 @@ class ActivityController extends AuthController
         $this->assign('activities',$result);
         $this->display();
     }
+    public function History_activities()
+    {
+        $shop = new ShopModel();
+        $activity = new ShopactivityModel();
+        $result = '';
+        $shop_id = $shop->getShopID(getFactorID());
+        $state = 0;
+        $result = $activity->listActivities($shop_id,$state);
+        $this->assign('activities',$result);
+        $this->display();
+    }
 
     public function del_activities()
     {
